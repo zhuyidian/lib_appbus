@@ -1,6 +1,7 @@
 package com.coocaa.appbus.core;
 
 import android.os.Bundle;
+import android.os.IBinder;
 import android.os.Parcelable;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
@@ -31,6 +32,13 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
     private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
             = new RemoteCallbackList<AppBusCallback>();
 
+    private IBinder.DeathRecipient mDeathRecipient = new IBinder.DeathRecipient() {
+        @Override
+        public void binderDied() {
+            LogUtil.d("service","binderDied!!!!!");
+        }
+    };
+
     @Override
     public Response run(Request request) throws RemoteException {
         if (AppBus.IS_BUNDLE_DEBUG) {
@@ -43,16 +51,24 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
      * 注册回调，用于处理带回调的函数.
      */
     @Override
-    public void register(AppBusCallback cb, int pid) throws RemoteException {
+    public void register(final AppBusCallback cb, int pid) throws RemoteException {
         LogUtil.d("service","register callBack: cb="+cb+", client pid="+pid+", Thread="+Thread.currentThread().toString());
         //mCallbacks.put(pid, cb);
-        if (cb != null) mRemoteCallbacks.register(cb);
+        if (cb != null) {
+            mRemoteCallbacks.register(cb);
+            cb.asBinder().linkToDeath(mDeathRecipient,0);
+        }
     }
 
     @Override
     public void unregister(AppBusCallback cb) throws RemoteException {
         LogUtil.d("service","unregister callBack: cb="+cb+", Thread="+Thread.currentThread().toString());
         if (cb != null) mRemoteCallbacks.unregister(cb);
+    }
+
+    public void clearRegister(){
+        LogUtil.d("service","clearServer mRemoteCallbacks kill:"+mRemoteCallbacks);
+        mRemoteCallbacks.kill();
     }
 
     @Override

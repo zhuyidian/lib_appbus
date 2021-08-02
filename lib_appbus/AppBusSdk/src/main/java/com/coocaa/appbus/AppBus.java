@@ -198,6 +198,7 @@ public class AppBus {
                 }
                 context.unbindService(mServiceConnection);
                 mXBusAidl = null;
+                notify = null;
             }
         });
     }
@@ -210,6 +211,10 @@ public class AppBus {
             }
             mXBusAidl.asBinder().unlinkToDeath(mDeathRecipient, 0);
             mXBusAidl = null;
+            if(notify!=null){
+                notify.serverKill();
+            }
+            notify=null;
             //是否需要重新绑定服务
             //bind();
         }
@@ -243,7 +248,8 @@ public class AppBus {
         @Override
         public void onServiceDisconnected(ComponentName name) {
             LogUtil.d("client","onServiceDisconnected: ComponentName:" + name);
-            mXBusAidl = null;
+            //交给mDeathRecipient去释放
+            //mXBusAidl = null;
         }
     };
     /**
@@ -455,8 +461,14 @@ public class AppBus {
 
     public AppBusAidlImpl createAppBusImpl(){
         appBusAidlImpl = new AppBusAidlImpl();
-        LogUtil.d("service","create AppBusImpl:"+appBusAidlImpl);
+        LogUtil.d("service","create appBusAidlImpl:"+appBusAidlImpl);
         return appBusAidlImpl;
+    }
+
+    public void clearServer(){
+        if(appBusAidlImpl!=null){
+            appBusAidlImpl.clearRegister();
+        }
     }
 
     public void update(final List<AppInfoBean> appInfoList){

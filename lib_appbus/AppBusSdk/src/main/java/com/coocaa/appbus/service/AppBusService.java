@@ -22,6 +22,13 @@ public class AppBusService extends Service {
         return AppBus.getInstance().createAppBusImpl();
     }
 
+    @Override
+    public void onDestroy() {
+        LogUtil.d("service","onDestroy");
+        AppBus.getInstance().clearServer();
+        super.onDestroy();
+    }
+
     public static class NewXBusService extends AppBusService {
     }
 
