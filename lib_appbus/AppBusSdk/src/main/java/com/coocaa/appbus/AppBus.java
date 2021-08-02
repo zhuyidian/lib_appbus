@@ -201,12 +201,29 @@ public class AppBus {
             }
         });
     }
-
+    private IBinder.DeathRecipient mDeathRecipient = new IBinder.DeathRecipient() {
+        @Override
+        public void binderDied() {
+            LogUtil.d("client","binderDied!!!!!mXBusAidl="+mXBusAidl);
+            if (mXBusAidl == null) {
+                return;
+            }
+            mXBusAidl.asBinder().unlinkToDeath(mDeathRecipient, 0);
+            mXBusAidl = null;
+            //是否需要重新绑定服务
+            //bind();
+        }
+    };
     ServiceConnection mServiceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mXBusAidl = AppBusAidl.Stub.asInterface(service);
             LogUtil.d("client","onServiceConnected: mXBusAidl="+mXBusAidl+", Thread="+Thread.currentThread().toString());
+            try {
+                service.linkToDeath(mDeathRecipient, 0);
+            } catch (RemoteException e) {
+                LogUtil.d("client","onServiceConnected: e1="+e);
+            }
             // 注册回调.
             ThreadManager.getInstance().ioThread(new Runnable() {
                 @Override
@@ -217,6 +234,7 @@ public class AppBus {
                         mXBusAidl.register(mCallback, Process.myPid());
                     } catch (RemoteException e) {
                         e.printStackTrace();
+                        LogUtil.d("client","onServiceConnected: e2="+e);
                     }
                 }
             });
@@ -225,6 +243,7 @@ public class AppBus {
         @Override
         public void onServiceDisconnected(ComponentName name) {
             LogUtil.d("client","onServiceDisconnected: ComponentName:" + name);
+            mXBusAidl = null;
         }
     };
     /**

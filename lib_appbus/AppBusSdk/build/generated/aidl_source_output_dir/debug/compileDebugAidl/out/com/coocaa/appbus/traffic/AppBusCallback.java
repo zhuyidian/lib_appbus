@@ -47,9 +47,10 @@ case TRANSACTION_update:
 {
 data.enforceInterface(descriptor);
 java.util.List<com.coocaa.appbus.traffic.AppInfoBean> _arg0;
-_arg0 = data.createTypedArrayList(com.coocaa.appbus.traffic.AppInfoBean.CREATOR);
+_arg0 = new java.util.ArrayList<com.coocaa.appbus.traffic.AppInfoBean>();
 this.update(_arg0);
 reply.writeNoException();
+reply.writeTypedList(_arg0);
 return true;
 }
 default:
@@ -79,9 +80,9 @@ android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
 try {
 _data.writeInterfaceToken(DESCRIPTOR);
-_data.writeTypedList(appInfoList);
 mRemote.transact(Stub.TRANSACTION_update, _data, _reply, 0);
 _reply.readException();
+_reply.readTypedList(appInfoList, com.coocaa.appbus.traffic.AppInfoBean.CREATOR);
 }
 finally {
 _reply.recycle();
