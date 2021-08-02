@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="logger[" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47623b0a-0cb8-413c-aa1c-26f9dbbe389a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../lib_logger/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/const.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/androidTest/java/com/tc/library/ApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/HttpUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/InitJointPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/LogAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/LogConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/LogJointPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/LoggerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/ReleaseJointPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/Tools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/UploadJointPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/java/com/dunn/logger/ZipUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/res/layout/ui_defualt_navigation_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/logger/src/test/java/com/tc/library/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/androidTest/java/com/dunn/logger/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/java/com/dunn/logger/demo/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/layout/activity_navigationbar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-xhdpi/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/sample/src/test/java/com/dunn/logger/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib_logger/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/library_animation">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/sample">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="customs" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="customs" type="f1a62948:ProjectNode" />
+                <item name=":sample" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="customs" type="f1a62948:ProjectNode" />
+                <item name=":sample" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1kllAnjIvputtQInKMotRFJaV1S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="huawei-dvc_an00-GJCNW20903001566" />
+    <property name="DEBUGGABLE_PROCESS" value="com.sample.tools" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/software/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="device.picker.selection" value="b2e7acc7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dunn.net" />
+      <recent name="com.dunn.sample" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger" />
+      <recent name="$PROJECT_DIR$/sample/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/tools/src/main/res" />
+      <recent name="$PROJECT_DIR$/sample/src/main/java/com/sample/tools" />
+      <recent name="$PROJECT_DIR$/tools/src/main/java/com/dunn/tools" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dunn.logger" />
+      <recent name="com.sample.tools" />
+      <recent name="com.dunn.tools.navigationbar" />
+      <recent name="com.dunn.net.listener" />
+      <recent name="com.dunn.net.request" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library_animation/src/main/res/drawable-xxxhdpi" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="lib_appbus.sample" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INTERFACES,SHOW_PROPERTIES,ALPHA_COMPARATOR,SHOW_INHERITED,SHOW_ANONYMOUS,SHOW_LAMBDA" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47623b0a-0cb8-413c-aa1c-26f9dbbe389a" name="Default Changelist" comment="" />
+      <created>1600413208320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600413208320</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="282" key="FileChooserDialogImpl" timestamp="1627918508004">
+      <screen x="49" y="24" width="1871" height="1056" />
+    </state>
+    <state x="739" y="282" key="FileChooserDialogImpl/49.24.1871.1056@49.24.1871.1056" timestamp="1627918508004" />
+    <state x="149" y="96" width="1671" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1627919451297">
+      <screen x="49" y="24" width="1871" height="1056" />
+    </state>
+    <state x="149" y="96" width="1671" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog/49.24.1871.1056@49.24.1871.1056" timestamp="1627919451297" />
+    <state x="674" y="277" width="621" height="522" key="find.popup" timestamp="1627920435661">
+      <screen x="49" y="24" width="1871" height="1056" />
+    </state>
+    <state x="674" y="277" width="621" height="522" key="find.popup/49.24.1871.1056@49.24.1871.1056" timestamp="1627920435661" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>valueTV1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

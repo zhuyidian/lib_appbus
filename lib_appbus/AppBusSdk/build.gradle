@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.zhuyidian.lib_logger'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled rootProject.ext.android.multiDexEnabled
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly rootProject.ext.dependencies["appcompat-v7"]
+    //implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+    //api rootProject.ext.dependencies["gson"]
+    implementation rootProject.ext.dependencies.gson7
+    implementation rootProject.ext.dependencies.aspectj
+}
+
+//上传系统设置 presenter的 aar到中央仓库.
+//def ARTIFACT_ID = 'anim' // 一般为别名
+//
+////脚本：将Lib打成aar包上传至maven私有库
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: MAVEN_LOCAL_PATH) {
+//                authentication(userName: ACCOUNT, password: PASSWORD)
+//            }
+//            pom.project {
+//                groupId GROUP_ID
+//                artifactId ARTIFACT_ID
+//                version android.defaultConfig.versionName
+//                packaging 'aar'
+//            }
+//        }
+//    }
+//}

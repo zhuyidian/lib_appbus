@@ -1,0 +1,27 @@
+com.dunn.logger
+attr centerTextColor
+attr centerTextSize
+attr circleRadius
+attr defaultTickColorBig
+attr defaultTickColorSmall
+attr defaultTriangleColor
+attr lineWidthBig
+attr lineWidthSmall
+attr roundBackgroundColor
+attr tickMaxCount
+attr tickStrokeSizeBig
+attr tickStrokeSizeSmall
+attr touchPrecision
+attr value
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+color gray_c
+color orange_f6
+color purple_55
+color purple_82
+color purple_83
+color transparent
+id back_tv
+layout ui_defualt_navigation_bar
+styleable CircleTickView centerTextColor centerTextSize circleRadius defaultTickColorBig defaultTickColorSmall defaultTriangleColor lineWidthBig lineWidthSmall roundBackgroundColor tickMaxCount tickStrokeSizeBig tickStrokeSizeSmall touchPrecision value

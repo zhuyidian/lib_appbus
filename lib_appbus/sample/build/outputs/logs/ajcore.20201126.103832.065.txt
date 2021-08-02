@@ -1,0 +1,214 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.8.9 built on Monday Mar 14, 2016 at 21:18:16 GMT
+---- Dump Properties ---
+Dump file: ajcore.20201126.103832.065.txt
+Dump reason: java.util.ConcurrentModificationException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
+	at java.util.ArrayList$Itr.next(ArrayList.java:859)
+	at org.aspectj.bridge.MessageHandler.hasAnyMessage(MessageHandler.java:160)
+	at org.aspectj.weaver.Dump.shouldDumpOnExit(Dump.java:179)
+	at org.aspectj.weaver.Dump.dumpOnExit(Dump.java:147)
+	at org.aspectj.weaver.Dump.dumpOnExit(Dump.java:135)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:116)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+	at sun.reflect.GeneratedMethodAccessor78.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)
+	at com.hujiang.gradle.plugin.android.aspectjx.internal.AJXTask.call(AJXTask.groovy:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+---- System Properties ---
+java.vendor=JetBrains s.r.o
+sun.java.launcher=SUN_STANDARD
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+idea.paths.selector=AndroidStudio4.1
+idea.vendor.name=Google
+jnidispatch.path=/home/dunn/.cache/Google/AndroidStudio4.1/tmp/jna4215381585411628831.tmp
+os.name=Linux
+sun.boot.class.path=/usr/local/android-studio4/jre/jre/lib/resources.jar:/usr/local/android-studio4/jre/jre/lib/rt.jar:/usr/local/android-studio4/jre/jre/lib/sunrsasign.jar:/usr/local/android-studio4/jre/jre/lib/jsse.jar:/usr/local/android-studio4/jre/jre/lib/jce.jar:/usr/local/android-studio4/jre/jre/lib/charsets.jar:/usr/local/android-studio4/jre/jre/lib/jfr.jar:/usr/local/android-studio4/jre/jre/classes
+sun.desktop=gnome
+java.vm.specification.vendor=Oracle Corporation
+icu.dir=/usr/local/android-studio4/plugins/android/lib/layoutlib/data/icu/
+java.runtime.version=1.8.0_242-release-1644-b3-6222593
+jb.vmOptionsFile=/usr/local/android-studio4/bin/studio64.vmoptions
+jna.loaded=true
+io.netty.serviceThreadPrefix=Netty 
+user.name=dunn
+aspectj.multithreaded=true
+io.netty.allocator.cacheTrimIntervalMillis=600000
+java.rmi.server.disableHttp=true
+idea.active=true
+user.language=en
+idea.version=4.1
+native_classes=android.animation.PropertyValuesHolder,android.content.res.StringBlock,android.content.res.XmlBlock,android.graphics.Bitmap,android.graphics.BitmapFactory,android.graphics.ByteBufferStreamAdaptor,android.graphics.Canvas,android.graphics.CanvasProperty,android.graphics.ColorFilter,android.graphics.ColorSpace,android.graphics.CreateJavaOutputStreamAdaptor,android.graphics.DrawFilter,android.graphics.FontFamily,android.graphics.Graphics,android.graphics.HardwareRenderer,android.graphics.ImageDecoder,android.graphics.Interpolator,android.graphics.MaskFilter,android.graphics.Matrix,android.graphics.NinePatch,android.graphics.Paint,android.graphics.Path,android.graphics.PathEffect,android.graphics.PathMeasure,android.graphics.Picture,android.graphics.RecordingCanvas,android.graphics.Region,android.graphics.RenderNode,android.graphics.Shader,android.graphics.Typeface,android.graphics.drawable.AnimatedVectorDrawable,android.graphics.drawable.VectorDrawable,android.graphics.fonts.Font,android.graphics.fonts.FontFamily,android.graphics.text.LineBreaker,android.graphics.text.MeasuredText,android.media.ImageReader,android.os.SystemProperties,android.os.Trace,android.text.AndroidCharacter,android.util.Log,android.util.PathParser,android.view.MotionEvent,android.view.RenderNodeAnimator,android.view.Surface,com.android.internal.util.VirtualRefBasePtr,com.android.internal.view.animation.NativeInterpolatorFactoryHelper
+jdk.attach.allowAttachSelf=true
+sun.boot.library.path=/usr/local/android-studio4/jre/jre/lib/amd64
+jna.nosys=true
+io.netty.allocator.useCacheForAllThreads=false
+idea.fatal.error.notification=disabled
+delegate_natives_to_natives=android/graphics/ColorSpace$Rgb,android/graphics/FontFamily,android/graphics/ImageDecoder,android/graphics/Matrix,android/graphics/Path,android/graphics/Typeface,android/graphics/fonts/Font$Builder,android/graphics/fonts/FontFamily$Builder,android/graphics/text/LineBreaker
+swing.bufferPerWindow=true
+java.version=1.8.0_242-release
+user.timezone=Asia/Chongqing
+sun.arch.data.model=64
+java.util.concurrent.ForkJoinPool.common.threadFactory=com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory
+jna.tmpdir=/home/dunn/.cache/Google/AndroidStudio4.1/tmp
+java.endorsed.dirs=/usr/local/android-studio4/jre/jre/lib/endorsed
+sun.cpu.isalist=
+sun.jnu.encoding=UTF-8
+file.encoding.pkg=sun.io
+file.separator=/
+register_properties_during_load=true
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+user.country=US
+jna.boot.library.path=
+java.home=/usr/local/android-studio4/jre/jre
+java.vm.info=mixed mode
+os.version=4.4.0-148-generic
+jdk.http.auth.tunneling.disabledSchemes=""
+path.separator=:
+java.vm.version=25.242-b3-6222593
+idea.no.launcher=false
+user.variant=
+com.jetbrains.suppressWindowRaise=false
+idea.max.content.load.filesize=20000
+java.awt.printerjob=sun.print.PSPrinterJob
+javax.swing.rebaseCssSizeMap=true
+sun.io.unicode.encoding=UnicodeLittle
+idea.cycle.buffer.size=1024
+awt.toolkit=sun.awt.X11.XToolkit
+ide.new.welcome.screen.force=true
+log4j.defaultInitOverride=true
+io.netty.processId=43384
+idea.platform.prefix=AndroidStudio
+use_bridge_for_logging=true
+idea.dynamic.classpath=false
+user.home=/home/dunn
+java.specification.vendor=Oracle Corporation
+library.jansi.path=/home/dunn/.gradle/native/jansi/null/linux64
+java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+java.vendor.url=https://www.jetbrains.com/
+java.vm.vendor=JetBrains s.r.o
+java.runtime.name=OpenJDK Runtime Environment
+sun.java.command=org.gradle.launcher.daemon.bootstrap.GradleDaemon 5.4.1
+java.class.path=/home/dunn/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/lib/gradle-launcher-5.4.1.jar
+io.netty.machineId=28:f0:76:ff:fe:16:65:0e
+java.vm.specification.name=Java Virtual Machine Specification
+idea.xdebug.key=-Xdebug
+io.netty.allocator.numDirectArenas=1
+java.vm.specification.version=1.8
+idea.popup.weight=heavy
+sun.cpu.endian=little
+sun.os.patch.level=unknown
+java.awt.headless=true
+java.io.tmpdir=/tmp
+java.vendor.url.bug=https://youtrack.jetbrains.com
+java.rmi.server.hostname=127.0.0.1
+jna.platform.library.path=/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/lib64:/usr/lib:/lib:/usr/lib/x86_64-linux-gnu/libfakeroot:/usr/lib/x86_64-linux-gnu/mesa-egl:/usr/lib/x86_64-linux-gnu/mesa
+kotlinx.coroutines.debug=off
+os.arch=amd64
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+idea.max.intellisense.filesize=2500
+java.ext.dirs=/usr/local/android-studio4/jre/jre/lib/ext:/usr/java/packages/lib/ext
+idea.jre.check=true
+user.dir=/home/dunn/project/github/lib_logger/lib_logger
+line.separator=
+
+java.vm.name=OpenJDK 64-Bit Server VM
+jdk.module.illegalAccess.silent=true
+pty4j.tmpdir=/home/dunn/.cache/Google/AndroidStudio4.1/tmp
+file.encoding=UTF-8
+studio.record.file=/home/dunn/.cache/Google/AndroidStudio4.1/tmp/AndroidStudio.ea374651-f178-4088-8e8f-0d051fe6139b
+pty4j.preferred.native.folder=/usr/local/android-studio4/lib/pty4j-native
+java.specification.version=1.8
+io.netty.allocator.numHeapArenas=1
+---- Command Line ---
+-showWeaveInfo
+-encoding
+UTF-8
+-source
+1.7
+-target
+1.7
+-classpath
+/home/dunn/project/github/lib_logger/lib_logger/sample/build/intermediates/ajx/debug/includefiles:/home/dunn/project/github/lib_logger/lib_logger/sample/build/intermediates/ajx/debug/excludefiles:/home/dunn/.gradle/caches/transforms-2/files-2.1/e72df7a1f8290964e5ebe4135955a853/jars/classes.jar:/home/dunn/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.0.0/42858b26cafdaa69b6149f45dfc2894007bc2c7a/collection-1.0.0.jar:/home/dunn/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.0.0/45599f2cd5965ac05a1488fa2a5c0cdd7c499ead/annotation-1.0.0.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/29650c087cef8cfdb319fc4528e5cd02/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/ecf814088108120903f0a962b6bb365e/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/176b768294e66db423d412dd6eba9ac4/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/e4aca6508654831021a7eb13f68ad1fe/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/1ace1688b5bfbbe50e2da76887efa09d/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/ef40d18df1f91daa7d62452fab409dfc/jars/classes.jar:/home/dunn/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.0.0/bb21b9a11761451b51624ac428d1f1bb5deeac38/core-common-2.0.0.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/955db18f7e6cd5681a1bd88f0b42cdec/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/7f91625ba128059c1a1a2436388ad733/jars/classes.jar:/home/dunn/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar:/home/dunn/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/a2e4b4f3f3890abccdfae5993d7ff622/jars/classes.jar:/home/dunn/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/47cd4de445f181695345626d017680b8/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/ed45ad0c2e5441952481afbc0c55fcc6/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/19fa6510f22419db833ce98662219a61/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/68313a7263586b5ec259ed9eeeb43324/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/014bf1148819bc403ecc7ea2324bbe31/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/76a9a8e21170e7836d711f26d6c93d9f/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/8229f997620b6eab797fe2e017947cff/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/4fec9694b2e01634a72fa2a8dd0679a9/jars/classes.jar:/home/dunn/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.14/65af551c0487609d48b91ea401de61f72bb91a09/aspectjrt-1.8.14.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/852e59c7d3626be1946bd98229027bc8/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/31309c9a60b50b8173b33e0b4b157b7e/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/390d700b5e9c6fa7f0802a37fa1a8873/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/2214f2e5ecf586b4571a17fff8a28d43/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/bc7ad396ddd476e2935c6776fd0a1eb1/jars/classes.jar:/home/dunn/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.0.0/e070ffae07452331bc5684734fce6831d531785c/lifecycle-common-2.0.0.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/ac803aee6ba4b2662ee198f995a2d542/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/0b9f47b3cdd79e2a8b24ce2f3b54d7bf/jars/classes.jar:/home/dunn/.gradle/caches/transforms-2/files-2.1/b5ef8b0e89bb31c2dfe97a18529ba257/jars/classes.jar:/home/dunn/project/github/lib_logger/lib_logger/logger/build/intermediates/runtime_library_classes/debug/classes.jar
+-bootclasspath
+/home/dunn/software/Android/Sdk/platforms/android-29/android.jar
+-inpath
+/home/dunn/.gradle/caches/transforms-2/files-2.1/390d700b5e9c6fa7f0802a37fa1a8873/jars/classes.jar
+-aspectpath
+/home/dunn/project/github/lib_logger/lib_logger/sample/build/intermediates/ajx/debug/aspecs
+-outjar
+/home/dunn/project/github/lib_logger/lib_logger/sample/build/intermediates/transforms/ajx/debug/14.jar
+-Xlint:ignore
+-warn:none
+---- Full Classpath ---
+/home/dunn/software/Android/Sdk/platforms/android-29/android.jar(21171708 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/390d700b5e9c6fa7f0802a37fa1a8873/jars/classes.jar(33627 bytes)
+/home/dunn/project/github/lib_logger/lib_logger/sample/build/intermediates/ajx/debug/aspecs(1 entries)
+/usr/local/android-studio4/jre/jre/lib/ext/cldrdata.jar(3861294 bytes)
+/usr/local/android-studio4/jre/jre/lib/ext/zipfs.jar(68986 bytes)
+/usr/local/android-studio4/jre/jre/lib/ext/sunec.jar(56258 bytes)
+/usr/local/android-studio4/jre/jre/lib/ext/nashorn.jar(2033800 bytes)
+/usr/local/android-studio4/jre/jre/lib/ext/sunpkcs11.jar(250331 bytes)
+/usr/local/android-studio4/jre/jre/lib/ext/localedata.jar(1179256 bytes)
+/usr/local/android-studio4/jre/jre/lib/ext/sunjce_provider.jar(269837 bytes)
+/usr/local/android-studio4/jre/jre/lib/ext/jaccess.jar(44523 bytes)
+/usr/local/android-studio4/jre/jre/lib/ext/dnsns.jar(8293 bytes)
+/home/dunn/project/github/lib_logger/lib_logger/sample/build/intermediates/ajx/debug/includefiles(2 entries)
+/home/dunn/project/github/lib_logger/lib_logger/sample/build/intermediates/ajx/debug/excludefiles(0 entries)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/e72df7a1f8290964e5ebe4135955a853/jars/classes.jar(35177 bytes)
+/home/dunn/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.0.0/42858b26cafdaa69b6149f45dfc2894007bc2c7a/collection-1.0.0.jar(41692 bytes)
+/home/dunn/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.0.0/45599f2cd5965ac05a1488fa2a5c0cdd7c499ead/annotation-1.0.0.jar(25378 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/29650c087cef8cfdb319fc4528e5cd02/jars/classes.jar(33871 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/ecf814088108120903f0a962b6bb365e/jars/classes.jar(6875 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/176b768294e66db423d412dd6eba9ac4/jars/classes.jar(34247 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/e4aca6508654831021a7eb13f68ad1fe/jars/classes.jar(2042 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/jars/classes.jar(624110 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/1ace1688b5bfbbe50e2da76887efa09d/jars/classes.jar(15476 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/ef40d18df1f91daa7d62452fab409dfc/jars/classes.jar(8645 bytes)
+/home/dunn/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.0.0/bb21b9a11761451b51624ac428d1f1bb5deeac38/core-common-2.0.0.jar(11249 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/955db18f7e6cd5681a1bd88f0b42cdec/jars/classes.jar(721107 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/7f91625ba128059c1a1a2436388ad733/jars/classes.jar(7661 bytes)
+/home/dunn/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar(72016 bytes)
+/home/dunn/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar(343528 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/a2e4b4f3f3890abccdfae5993d7ff622/jars/classes.jar(11278 bytes)
+/home/dunn/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar(231952 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/47cd4de445f181695345626d017680b8/jars/classes.jar(41317 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/ed45ad0c2e5441952481afbc0c55fcc6/jars/classes.jar(31413 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/19fa6510f22419db833ce98662219a61/jars/classes.jar(23137 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/68313a7263586b5ec259ed9eeeb43324/jars/classes.jar(5717 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/014bf1148819bc403ecc7ea2324bbe31/jars/classes.jar(55298 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/76a9a8e21170e7836d711f26d6c93d9f/jars/classes.jar(9055 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/8229f997620b6eab797fe2e017947cff/jars/classes.jar(7053 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/4fec9694b2e01634a72fa2a8dd0679a9/jars/classes.jar(6879 bytes)
+/home/dunn/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.14/65af551c0487609d48b91ea401de61f72bb91a09/aspectjrt-1.8.14.jar(121375 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/852e59c7d3626be1946bd98229027bc8/jars/classes.jar(27688 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/31309c9a60b50b8173b33e0b4b157b7e/jars/classes.jar(9867 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/390d700b5e9c6fa7f0802a37fa1a8873/jars/classes.jar(33627 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/2214f2e5ecf586b4571a17fff8a28d43/jars/classes.jar(11504 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/bc7ad396ddd476e2935c6776fd0a1eb1/jars/classes.jar(33157 bytes)
+/home/dunn/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.0.0/e070ffae07452331bc5684734fce6831d531785c/lifecycle-common-2.0.0.jar(20306 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/ac803aee6ba4b2662ee198f995a2d542/jars/classes.jar(166094 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/0b9f47b3cdd79e2a8b24ce2f3b54d7bf/jars/classes.jar(10245 bytes)
+/home/dunn/.gradle/caches/transforms-2/files-2.1/b5ef8b0e89bb31c2dfe97a18529ba257/jars/classes.jar(28132 bytes)
+/home/dunn/project/github/lib_logger/lib_logger/logger/build/intermediates/runtime_library_classes/debug/classes.jar(3488 bytes)
+---- Compiler Messages ---
+info Pipelining compilation
+info weaver operating in reweavable mode.  Need to verify any required types exist.
