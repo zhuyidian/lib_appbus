@@ -163,7 +163,7 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
     }
 
     public void update(List<AppInfoBean> appInfoList) throws RemoteException {
-        LogUtil.d("service","update"+", Thread="+Thread.currentThread().toString());
+        LogUtil.d("service","update"+", appInfoList:"+(appInfoList!=null?appInfoList.size():"null")+", Thread="+Thread.currentThread().toString());
 //        if(mCallbacks!=null){
 //            Iterator<Map.Entry<Integer, AppBusCallback>> entries = mCallbacks.entrySet().iterator();
 //            while (entries.hasNext()) {
@@ -181,6 +181,7 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
             } catch (RemoteException e) {
                 // The RemoteCallbackList will take care of removing
                 // the dead object for us.
+                LogUtil.d("service","update"+", e="+e);
             }
         }
         mRemoteCallbacks.finishBroadcast();
