@@ -68,7 +68,7 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
 
     public void clearRegister(){
         LogUtil.d("service","clearServer mRemoteCallbacks kill:"+mRemoteCallbacks);
-        mRemoteCallbacks.kill();
+        //mRemoteCallbacks.kill();
     }
 
     @Override
