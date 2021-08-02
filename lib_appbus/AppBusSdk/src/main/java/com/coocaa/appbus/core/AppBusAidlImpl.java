@@ -56,7 +56,7 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
         //mCallbacks.put(pid, cb);
         if (cb != null) {
             mRemoteCallbacks.register(cb);
-            cb.asBinder().linkToDeath(mDeathRecipient,0);
+            //cb.asBinder().linkToDeath(mDeathRecipient,0);
         }
     }
 
