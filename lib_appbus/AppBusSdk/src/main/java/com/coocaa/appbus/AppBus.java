@@ -472,6 +472,7 @@ public class AppBus {
     }
 
     public void update(final List<AppInfoBean> appInfoList){
+        LogUtil.d("service","update appInfoList:"+(appInfoList!=null?appInfoList.size():"null"));
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
