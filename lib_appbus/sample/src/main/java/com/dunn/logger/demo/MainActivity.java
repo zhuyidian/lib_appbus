@@ -5,20 +5,19 @@ import android.util.Log;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.dunn.logger.InitJointPoint;
-import com.dunn.logger.LogJointPoint;
-import com.dunn.logger.ReleaseJointPoint;
-import com.dunn.logger.UploadJointPoint;
+import com.coocaa.appbus.AppBus;
 
 public class MainActivity extends AppCompatActivity {
 
     //初始化logger的地方
-    @InitJointPoint(mFilePath = "/logger",mFileName = "TTT_logger_cache",isDebug = true)
+    //@InitJointPoint(mFilePath = "/logger",mFileName = "TTT_logger_cache",isDebug = true)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+        //AppBus.getInstance().update();
     }
 
     public void click(View view){
@@ -28,20 +27,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //释放logger的地方
-    @ReleaseJointPoint
+    //@ReleaseJointPoint
     @Override
     protected void onDestroy() {
         super.onDestroy();
     }
 
     //收集日志的地方
-    @LogJointPoint(type = "MSG",open = true)
+    //@LogJointPoint(type = "MSG",open = true)
     public void logOut(String msg){
 
     }
 
     //上传日志的地方
-    @UploadJointPoint
+    //@UploadJointPoint
     public <T> void uploadLogger(T value,String url,String token,String userId){
 
     }

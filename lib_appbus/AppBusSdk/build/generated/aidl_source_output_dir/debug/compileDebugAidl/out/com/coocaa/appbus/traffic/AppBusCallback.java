@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/dunn/project/github/lib_logger/lib_logger/AppBusSdk/src/main/aidl/com/coocaa/appbus/traffic/AppBusCallback.aidl
+ * Original file: /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/aidl/com/coocaa/appbus/traffic/AppBusCallback.aidl
  */
 package com.coocaa.appbus.traffic;
 public interface AppBusCallback extends android.os.IInterface
