@@ -189,7 +189,15 @@ public class AppBus {
 
             @Override
             public void run() {
+                if(mXBusAidl!=null){
+                    try {
+                        mXBusAidl.unregister(mCallback);
+                    } catch (RemoteException e) {
+                        e.printStackTrace();
+                    }
+                }
                 context.unbindService(mServiceConnection);
+                mXBusAidl = null;
             }
         });
     }
@@ -374,6 +382,9 @@ public class AppBus {
     }
 
     public List<AppInfoBean> getAppInfo() throws RemoteException {
+        if(mXBusAidl==null){
+            return null;
+        }
         return mXBusAidl.getAppInfo();
     }
 

@@ -2,6 +2,7 @@ package com.coocaa.appbus.core;
 
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.text.TextUtils;
 
@@ -27,6 +28,8 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
     private Gson gson = new Gson();
     // 用于保存回调，与pid对应
     private ConcurrentHashMap<Integer, AppBusCallback> mCallbacks = new ConcurrentHashMap<Integer, AppBusCallback>();
+    private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
+            = new RemoteCallbackList<AppBusCallback>();
 
     @Override
     public Response run(Request request) throws RemoteException {
@@ -42,7 +45,14 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
     @Override
     public void register(AppBusCallback cb, int pid) throws RemoteException {
         LogUtil.d("service","register callBack: cb="+cb+", client pid="+pid+", Thread="+Thread.currentThread().toString());
-        mCallbacks.put(pid, cb);
+        //mCallbacks.put(pid, cb);
+        if (cb != null) mRemoteCallbacks.register(cb);
+    }
+
+    @Override
+    public void unregister(AppBusCallback cb) throws RemoteException {
+        LogUtil.d("service","unregister callBack: cb="+cb+", Thread="+Thread.currentThread().toString());
+        if (cb != null) mRemoteCallbacks.unregister(cb);
     }
 
     @Override
@@ -138,15 +148,25 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
 
     public void update(List<AppInfoBean> appInfoList) throws RemoteException {
         LogUtil.d("service","update"+", Thread="+Thread.currentThread().toString());
-        if(mCallbacks!=null){
-            Iterator<Map.Entry<Integer, AppBusCallback>> entries = mCallbacks.entrySet().iterator();
-            while (entries.hasNext()) {
-                Map.Entry<Integer, AppBusCallback> entry = entries.next();
-                LogUtil.d("service","update listener: key="+entry.getKey()+", value="+entry.getValue());
-                if(entry.getValue()!=null){
-                    entry.getValue().update(appInfoList);
-                }
+//        if(mCallbacks!=null){
+//            Iterator<Map.Entry<Integer, AppBusCallback>> entries = mCallbacks.entrySet().iterator();
+//            while (entries.hasNext()) {
+//                Map.Entry<Integer, AppBusCallback> entry = entries.next();
+//                LogUtil.d("service","update listener: key="+entry.getKey()+", value="+entry.getValue());
+//                if(entry.getValue()!=null){
+//                    entry.getValue().update(appInfoList);
+//                }
+//            }
+//        }
+        final int N = mRemoteCallbacks.beginBroadcast();
+        for (int i=0; i<N; i++) {
+            try {
+                mRemoteCallbacks.getBroadcastItem(i).update(appInfoList);
+            } catch (RemoteException e) {
+                // The RemoteCallbackList will take care of removing
+                // the dead object for us.
             }
         }
+        mRemoteCallbacks.finishBroadcast();
     }
 }

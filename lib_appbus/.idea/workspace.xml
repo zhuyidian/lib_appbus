@@ -12,25 +12,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47623b0a-0cb8-413c-aa1c-26f9dbbe389a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_14_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_zhuyidian_lib_appbus_AppBusSdk_V1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_zhuyidian_lib_appbus_AppBusSdk_V1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_3_10_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/logger/lib_appbus.logger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/logger/lib_appbus.logger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/sample/lib_appbus.sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sample/lib_appbus.sample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/coocaa/appbus/traffic/AppBusAidl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/coocaa/appbus/traffic/AppBusAidl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/AppBusAidlImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/service/AppBusService$NewXBusService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/service/AppBusService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppBusAidl$Stub$Proxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppBusAidl$Stub$Proxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppBusAidl$Stub.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppBusAidl$Stub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppBusAidl.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppBusAidl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/aidl/com/coocaa/appbus/traffic/AppBusAidl.aidl" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/aidl/com/coocaa/appbus/traffic/AppBusAidl.aidl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/AppBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/AppBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/const.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/dunn/logger/demo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/dunn/logger/demo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/core/AppBusAidlImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/core/AppBusAidlImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +214,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="797" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1627926949380">
+      <screen x="49" y="24" width="1871" height="1056" />
+    </state>
+    <state x="797" y="246" key="#com.intellij.ide.util.MemberChooser/49.24.1871.1056@49.24.1871.1056" timestamp="1627926949380" />
     <state x="739" y="282" key="FileChooserDialogImpl" timestamp="1627924240354">
       <screen x="49" y="24" width="1871" height="1056" />
     </state>

@@ -9,5 +9,6 @@ import com.coocaa.appbus.traffic.AppBusCallback;
 interface AppBusAidl {
     Response run(in Request request);
     void register(AppBusCallback cb, int pid);
+    void unregister(AppBusCallback cb);
     List<AppInfoBean> getAppInfo();
 }

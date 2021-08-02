@@ -75,6 +75,15 @@ this.register(_arg0, _arg1);
 reply.writeNoException();
 return true;
 }
+case TRANSACTION_unregister:
+{
+data.enforceInterface(descriptor);
+com.coocaa.appbus.traffic.AppBusCallback _arg0;
+_arg0 = com.coocaa.appbus.traffic.AppBusCallback.Stub.asInterface(data.readStrongBinder());
+this.unregister(_arg0);
+reply.writeNoException();
+return true;
+}
 case TRANSACTION_getAppInfo:
 {
 data.enforceInterface(descriptor);
@@ -149,6 +158,21 @@ _reply.recycle();
 _data.recycle();
 }
 }
+@Override public void unregister(com.coocaa.appbus.traffic.AppBusCallback cb) throws android.os.RemoteException
+{
+android.os.Parcel _data = android.os.Parcel.obtain();
+android.os.Parcel _reply = android.os.Parcel.obtain();
+try {
+_data.writeInterfaceToken(DESCRIPTOR);
+_data.writeStrongBinder((((cb!=null))?(cb.asBinder()):(null)));
+mRemote.transact(Stub.TRANSACTION_unregister, _data, _reply, 0);
+_reply.readException();
+}
+finally {
+_reply.recycle();
+_data.recycle();
+}
+}
 @Override public java.util.List<com.coocaa.appbus.traffic.AppInfoBean> getAppInfo() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
@@ -169,9 +193,11 @@ return _result;
 }
 static final int TRANSACTION_run = (android.os.IBinder.FIRST_CALL_TRANSACTION + 0);
 static final int TRANSACTION_register = (android.os.IBinder.FIRST_CALL_TRANSACTION + 1);
-static final int TRANSACTION_getAppInfo = (android.os.IBinder.FIRST_CALL_TRANSACTION + 2);
+static final int TRANSACTION_unregister = (android.os.IBinder.FIRST_CALL_TRANSACTION + 2);
+static final int TRANSACTION_getAppInfo = (android.os.IBinder.FIRST_CALL_TRANSACTION + 3);
 }
 public com.coocaa.appbus.traffic.Response run(com.coocaa.appbus.traffic.Request request) throws android.os.RemoteException;
 public void register(com.coocaa.appbus.traffic.AppBusCallback cb, int pid) throws android.os.RemoteException;
+public void unregister(com.coocaa.appbus.traffic.AppBusCallback cb) throws android.os.RemoteException;
 public java.util.List<com.coocaa.appbus.traffic.AppInfoBean> getAppInfo() throws android.os.RemoteException;
 }
