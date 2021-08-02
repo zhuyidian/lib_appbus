@@ -5,7 +5,7 @@ INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/An
 INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/AndroidManifest.xml:2:1-26:12
 INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/852e59c7d3626be1946bd98229027bc8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:2:1-26:12
+MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/955db18f7e6cd5681a1bd88f0b42cdec/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/ac803aee6ba4b2662ee198f995a2d542/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/176b768294e66db423d412dd6eba9ac4/AndroidManifest.xml:17:1-22:12
@@ -63,8 +63,8 @@ ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/Andro
 		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/AndroidManifest.xml:7:22-77
 application
 ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/AndroidManifest.xml:9:5-24:19
-MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:11:5-24:19
-MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:11:5-24:19
+MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:11:5-24:19
+MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:11:5-24:19
 MERGED from [androidx.core:core:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/560f91dfde75ce23543824661875bc6b/AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/b5ef8b0e89bb31c2dfe97a18529ba257/AndroidManifest.xml:22:5-23:19
@@ -105,8 +105,8 @@ INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/An
 INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/AndroidManifest.xml
 MERGED from [androidx.multidex:multidex:2.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/852e59c7d3626be1946bd98229027bc8/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/852e59c7d3626be1946bd98229027bc8/AndroidManifest.xml:20:5-43
-MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/955db18f7e6cd5681a1bd88f0b42cdec/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/955db18f7e6cd5681a1bd88f0b42cdec/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/ac803aee6ba4b2662ee198f995a2d542/AndroidManifest.xml:20:5-44
@@ -170,22 +170,22 @@ INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/An
 		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/AndroidManifest.xml
 		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/sample/src/main/AndroidManifest.xml
 meta-data#com.coocaa.appbus.get
-ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:12:9-14:36
+ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:12:9-14:36
 	android:value
-		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:14:13-33
+		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:14:13-33
 	android:name
-		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:13:13-49
+		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:13:13-49
 service#com.coocaa.appbus.service.AppBusService
-ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:16:9-23:19
+ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:16:9-23:19
 	android:enabled
-		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:18:13-35
+		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:18:13-35
 	android:exported
-		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:19:13-36
+		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:19:13-36
 	android:name
-		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:17:13-67
+		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:17:13-67
 intent-filter#action:name:com.coocaa.appbus.service.AppBusService
-ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:20:13-22:29
+ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:20:13-22:29
 action#com.coocaa.appbus.service.AppBusService
-ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:21:17-82
+ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:21:17-82
 	android:name
-		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.0] /home/dunn/.gradle/caches/transforms-2/files-2.1/d125163c71dae74f0a64394a087ba850/AndroidManifest.xml:21:25-79
+		ADDED from [com.github.zhuyidian.lib_appbus:AppBusSdk:V1.0.2] /home/dunn/.gradle/caches/transforms-2/files-2.1/cf88f16c361b00a7f7c65b212542a5d9/AndroidManifest.xml:21:25-79

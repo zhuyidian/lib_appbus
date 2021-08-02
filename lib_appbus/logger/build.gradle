@@ -1,32 +1,32 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-repositories {
-    mavenCentral()
-    google()
-    jcenter()
-    maven {
-        url "https://jitpack.io"
-    }
-}
+//repositories {
+//    mavenCentral()
+//    google()
+//    jcenter()
+//    maven {
+//        url "https://jitpack.io"
+//    }
+//}
 group = 'com.github.zhuyidian.lib_logger'
 
 //第二步：迁移androidX 有关Verdion要使用29
 android {
 //    compileSdkVersion 29
 //    buildToolsVersion '29.0.0'
-    compileSdkVersion 28   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
-    buildToolsVersion "28.0.3"   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
+    compileSdkVersion rootProject.ext.android.compileSdkVersion   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
+    buildToolsVersion rootProject.ext.android.buildToolsVersion   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 28 //29   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
-        versionCode 1
-        versionName '1.0.0'
-        multiDexEnabled true
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion //29   //Android10（API 29）getExternalStorageDirectory没权限，暂时使用28
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled rootProject.ext.android.multiDexEnabled
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled rootProject.ext.android.minifyEnabled
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -34,8 +34,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
-    implementation 'org.aspectj:aspectjrt:1.8.+'
+    compileOnly rootProject.ext.dependencies.appcompatAndroidX
+    implementation rootProject.ext.dependencies.okhttp3
+    implementation rootProject.ext.dependencies['okhttp3-logging-interceptor']
+    implementation rootProject.ext.dependencies.aspectj
 }

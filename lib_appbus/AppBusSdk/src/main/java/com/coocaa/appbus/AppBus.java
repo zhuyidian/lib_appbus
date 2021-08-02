@@ -114,8 +114,12 @@ public class AppBus {
         PackageManager pm = context.getPackageManager();
         List<ResolveInfo> resolveInfo = pm.queryIntentServices(implicitIntent, 0);
         LogUtil.d("client","createExplicitFromImplicitIntent: action="+implicitIntent.getAction());
-        LogUtil.d("client","createExplicitFromImplicitIntent: resolveInfo="+resolveInfo);
         LogUtil.d("client","createExplicitFromImplicitIntent: localpackageName="+context.getPackageName());
+        LogUtil.d("client","createExplicitFromImplicitIntent: resolveInfo.size="+(resolveInfo!=null?resolveInfo.size():"null"));
+        for(ResolveInfo info : resolveInfo){
+            LogUtil.d("client","createExplicitFromImplicitIntent: packageName="+info.serviceInfo.packageName+
+                    ", className="+info.serviceInfo.name);
+        }
 
         // Make sure only one match was found
         if (resolveInfo == null || resolveInfo.size() <=0) {
@@ -126,8 +130,6 @@ public class AppBus {
         boolean result = false;
         //过滤本地
         for(ResolveInfo info : resolveInfo){
-            LogUtil.d("client","createExplicitFromImplicitIntent: packageName="+info.serviceInfo.packageName+
-                    ", className="+info.serviceInfo.name);
             if(!info.serviceInfo.packageName.equals(context.getPackageName())){
                 // Get component info and create ComponentName
 //                ResolveInfo serviceInfo = resolveInfo.get(0);

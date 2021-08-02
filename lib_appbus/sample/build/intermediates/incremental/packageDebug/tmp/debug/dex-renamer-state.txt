@@ -1,4 +1,4 @@
-#Tue Aug 03 00:32:17 CST 2021
+#Tue Aug 03 01:38:12 CST 2021
 base.0=/home/dunn/project/github/lib_appbus/lib_appbus/sample/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes2.dex
 renamed.1=classes2.dex
