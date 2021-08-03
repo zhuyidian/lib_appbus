@@ -1,59 +1,45 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
+ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
 	package
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:11-39
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
+		ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:11-39
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+		ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:1:1-19:12
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+		ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:1:1-19:12
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:2:5-63
+		ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:2:5-63
 application
-ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:4:5-17:19
+ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:4:5-17:19
 meta-data#com.coocaa.appbus.get
-ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:5:9-7:36
+ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:5:9-7:36
 	android:value
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:7:13-33
+		ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:7:13-33
 	android:name
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:6:13-49
-service#com.coocaa.appbus.service.AppBusService
-ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:9:9-16:19
-	android:enabled
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:11:13-35
-	android:exported
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:12:13-36
-	android:name
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:10:13-67
-intent-filter#action:name:com.coocaa.appbus.service.AppBusService
-ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:13:13-15:29
-action#com.coocaa.appbus.service.AppBusService
-ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml:14:25-79
+		ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml:6:13-49
 uses-sdk
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+		ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-		ADDED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
-		INJECTED from /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/AndroidManifest.xml
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+		ADDED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml
+		INJECTED from D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\AndroidManifest.xml

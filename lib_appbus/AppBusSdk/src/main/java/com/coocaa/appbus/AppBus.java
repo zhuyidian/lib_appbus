@@ -11,12 +11,12 @@ import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Process;
+import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.text.TextUtils;
 
 import com.coocaa.appbus.able.INotify;
 import com.coocaa.appbus.able.IUserData;
-import com.coocaa.appbus.core.AppBusAidlImpl;
 import com.coocaa.appbus.joor.Reflect;
 import com.coocaa.appbus.service.AppBusService;
 import com.coocaa.appbus.thread.ThreadManager;
@@ -415,8 +415,10 @@ public class AppBus {
 
     //-------------------------------server--------------------------------------------------------
     private Map<Class<?>, Class<?>> mRegisterClassMap = new HashMap<>();
-    private AppBusAidlImpl appBusAidlImpl;
     private IUserData userData;
+    private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
+            = new RemoteCallbackList<AppBusCallback>();
+
     /**
      * 注册需要被调用的class.
      *
@@ -459,16 +461,16 @@ public class AppBus {
         return userData;
     }
 
-    public AppBusAidlImpl createAppBusImpl(){
-        appBusAidlImpl = new AppBusAidlImpl();
-        LogUtil.d("service","create appBusAidlImpl:"+appBusAidlImpl);
-        return appBusAidlImpl;
+    public void registerListener(AppBusCallback cb){
+        if(mRemoteCallbacks!=null)mRemoteCallbacks.register(cb);
     }
 
-    public void clearServer(){
-        if(appBusAidlImpl!=null){
-            appBusAidlImpl.clearRegister();
-        }
+    public void unregisterListener(AppBusCallback cb){
+        if(mRemoteCallbacks!=null)mRemoteCallbacks.unregister(cb);
+    }
+
+    public void killListener(){
+        if(mRemoteCallbacks!=null)mRemoteCallbacks.kill();
     }
 
     public void update(final List<AppInfoBean> appInfoList){
@@ -476,13 +478,17 @@ public class AppBus {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
-                if(appBusAidlImpl!=null){
+                final int N = mRemoteCallbacks.beginBroadcast();
+                for (int i=0; i<N; i++) {
                     try {
-                        appBusAidlImpl.update(appInfoList);
+                        mRemoteCallbacks.getBroadcastItem(i).update(appInfoList);
                     } catch (RemoteException e) {
-                        e.printStackTrace();
+                        // The RemoteCallbackList will take care of removing
+                        // the dead object for us.
+                        LogUtil.d("service","update"+", e="+e);
                     }
                 }
+                mRemoteCallbacks.finishBroadcast();
             }
         });
     }

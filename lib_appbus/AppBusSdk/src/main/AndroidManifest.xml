@@ -6,14 +6,14 @@
             android:name="com.coocaa.appbus.get"
             android:value="true" />
 
-        <service
-            android:name="com.coocaa.appbus.service.AppBusService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.coocaa.appbus.service.AppBusService" />
-            </intent-filter>
-        </service>
+<!--        <service-->
+<!--            android:name="com.coocaa.appbus.service.AppBusService"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.coocaa.appbus.service.AppBusService" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
     </application>
 
 </manifest>
