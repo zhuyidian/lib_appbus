@@ -39,6 +39,7 @@ import java.util.Map;
  *
  */
 public class AppBus {
+    public static final String ACTION="com.coocaa.os.controlcenter.APP_INFO";
     public static final boolean IS_BUNDLE_DEBUG = true;
     private static AppBus instance = new AppBus();
 
