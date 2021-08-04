@@ -218,7 +218,7 @@ public class AppBus {
             }
             //这里进行数据传输
             List<AppInfoBean> bean = queue.poll();
-            LogUtil.d("service","[Notify]onServiceConnected: bean="+bean);
+            LogUtil.d("service","[Notify] onServiceConnected: list size="+(bean!=null?bean.size():"null"));
             if(bean!=null){
                 try {
                     mNotifyAidl.notify(bean);

@@ -14,13 +14,13 @@ public class LogUtil {
 
     public static void v(String module,String msg) {
         if (isLog) {
-            Log.v("AppBus", getPrefix(module)+" "+msg);
+            Log.v("AppBus[", getPrefix(module)+" "+msg);
         }
     }
 
     public static void d(String module,String msg) {
         if (isLog) {
-            Log.d("AppBus", getPrefix(module)+" "+msg);
+            Log.d("AppBus[", getPrefix(module)+" "+msg);
         }
     }
 

@@ -21,11 +21,11 @@ public abstract class AppBusService extends Service {
 
     protected abstract List<AppInfoBean> onGetAppInfo();
 
-//    @Override
-//    public void onCreate() {
-//        super.onCreate();
-//        LogUtil.d("service","onCreate"+", Thread="+Thread.currentThread().toString());
-//    }
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        LogUtil.d("service","onCreate"+", Thread="+Thread.currentThread().toString());
+    }
 
 
     @Override
@@ -89,4 +89,8 @@ public abstract class AppBusService extends Service {
             LogUtil.d("service","binderDied!!!!!");
         }
     };
+
+//    private boolean isCallbackAlive() {
+//        return mHost != null && mHost.asBinder().isBinderAlive();
+//    }
 }

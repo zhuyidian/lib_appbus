@@ -354,11 +354,11 @@ public class AndroidUtil {
         // Retrieve all services that can match the given intent
         PackageManager pm = context.getPackageManager();
         List<ResolveInfo> resolveInfo = pm.queryIntentServices(implicitIntent, 0);
-        LogUtil.d("client","createExplicitFromImplicitIntent: action="+implicitIntent.getAction());
-        LogUtil.d("client","createExplicitFromImplicitIntent: localpackageName="+context.getPackageName());
-        LogUtil.d("client","createExplicitFromImplicitIntent: resolveInfo.size="+(resolveInfo!=null?resolveInfo.size():"null"));
+        LogUtil.d("check action","createExplicitFromImplicitIntent: action="+implicitIntent.getAction());
+        LogUtil.d("check action","createExplicitFromImplicitIntent: localpackageName="+context.getPackageName());
+        LogUtil.d("check action","createExplicitFromImplicitIntent: resolveInfo.size="+(resolveInfo!=null?resolveInfo.size():"null"));
         for(ResolveInfo info : resolveInfo){
-            LogUtil.d("client","createExplicitFromImplicitIntent: packageName="+info.serviceInfo.packageName+
+            LogUtil.d("check action","createExplicitFromImplicitIntent: packageName="+info.serviceInfo.packageName+
                     ", className="+info.serviceInfo.name);
         }
 
@@ -377,7 +377,7 @@ public class AndroidUtil {
                 ResolveInfo serviceInfo = info;
                 String packageName = serviceInfo.serviceInfo.packageName;
                 String className = serviceInfo.serviceInfo.name;
-                LogUtil.d("client","createExplicitFromImplicitIntent: !!!bind!!! packageName="+packageName+", className="+className);
+                LogUtil.d("check action","createExplicitFromImplicitIntent: !!!go to bind!!! packageName="+packageName+", className="+className);
                 ComponentName component = new ComponentName(packageName, className);
 
                 // Set the component to be explicit

@@ -70,7 +70,7 @@ public class Client {
         return bind(context,packageName,action);
     }
 
-    public void disconnect(Context context) {
+    public void destroy(Context context) {
         unbind(context);
         LogUtil.d("client","unbind service");
     }
@@ -83,17 +83,14 @@ public class Client {
             public void run() {
                 LogUtil.d("client","bind service: packageName="+packageName+", action="+action+
                         ", Thread="+Thread.currentThread().toString());
-//                Intent service = new Intent(action);
-//                service.setPackage(packageName);
 
                 Intent intent = new Intent(action);
                 Intent choice = AndroidUtil.createExplicitFromImplicitIntent(context,intent);
                 Intent eintent = null;
                 if(choice==null){
-
+                    //这里没有找到对应的service，怎么处理？
                 }else{
                     eintent = new Intent(choice);
-
                     boolean res = context.bindService(eintent, mServiceConnection, Service.BIND_AUTO_CREATE);
                     LogUtil.d("client","bind service: success eintent="+eintent);
                 }
