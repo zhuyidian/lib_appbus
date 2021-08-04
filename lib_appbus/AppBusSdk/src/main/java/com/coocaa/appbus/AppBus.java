@@ -426,6 +426,11 @@ public class AppBus {
     private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
             = new RemoteCallbackList<AppBusCallback>();
     public static final String ACTION_NOTIFY="com.coocaa.os.controlcenter.NOTIFY";
+    private Context mContext;
+
+    public void init(Context context){
+        this.mContext = context;
+    }
 
     /**
      * 注册需要被调用的class.
@@ -486,12 +491,16 @@ public class AppBus {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
-                if(mNotifyAidl!=null){
-                    try {
-                        mNotifyAidl.notify(appInfoList);
-                    } catch (RemoteException e) {
-                        e.printStackTrace();
-                    }
+//                if(mNotifyAidl!=null){
+//                    try {
+//                        mNotifyAidl.notify(appInfoList);
+//                    } catch (RemoteException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+                LogUtil.d("service","update[Notify] mRemoteCallbacks size:"+mRemoteCallbacks.getRegisteredCallbackCount());
+                if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
+                    bindNotifyService(mContext);
                 }
                 try {
                     final int N = mRemoteCallbacks.beginBroadcast();
@@ -546,11 +555,12 @@ public class AppBus {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mNotifyAidl = NotifyAidl.Stub.asInterface(service);
+            LogUtil.d("service","onServiceConnected[Notify] mNotifyAidl="+mNotifyAidl);
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-
+            LogUtil.d("service","onServiceDisconnected[Notify]");
         }
     };
 }

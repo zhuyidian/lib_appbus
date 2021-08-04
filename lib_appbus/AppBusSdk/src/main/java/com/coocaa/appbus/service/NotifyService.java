@@ -22,18 +22,18 @@ public abstract class NotifyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        LogUtil.d("client","onCreate"+", Thread="+Thread.currentThread().toString());
+        LogUtil.d("client","onCreate[Notify]"+", Thread="+Thread.currentThread().toString());
     }
 
     @Override
     public IBinder onBind(Intent intent) {
-        LogUtil.d("client","onBind intent="+intent+", Thread="+Thread.currentThread().toString());
+        LogUtil.d("client","onBind[Notify] intent="+intent+", Thread="+Thread.currentThread().toString());
         return new NotifyAidlImpl();
     }
 
     @Override
     public void onDestroy() {
-        LogUtil.d("client","onDestroy");
+        LogUtil.d("client","onDestroy[Notify]");
         super.onDestroy();
     }
 
@@ -41,7 +41,7 @@ public abstract class NotifyService extends Service {
         @Override
         public void notify(List<AppInfoBean> appInfoList) throws RemoteException {
             //这里需要保存到数据库
-            LogUtil.d("client","notify list.size="+(appInfoList!=null?appInfoList.size():"null")+", Thread="+Thread.currentThread().toString());
+            LogUtil.d("client","notify[Notify] list.size="+(appInfoList!=null?appInfoList.size():"null")+", Thread="+Thread.currentThread().toString());
             onNotifyAppInfo(appInfoList);
         }
     }
