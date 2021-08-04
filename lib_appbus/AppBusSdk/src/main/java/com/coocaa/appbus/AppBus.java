@@ -576,9 +576,10 @@ public class AppBus {
             }
             //这里进行数据传输
             List<AppInfoBean> bean = queue.poll();
+            LogUtil.d("service","onServiceConnected[Notify] bean="+bean);
             if(bean!=null){
                 try {
-                    mNotifyAidl.notify(queue.poll());
+                    mNotifyAidl.notify(bean);
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
