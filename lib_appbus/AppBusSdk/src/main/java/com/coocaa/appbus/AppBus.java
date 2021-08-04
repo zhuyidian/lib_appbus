@@ -57,7 +57,7 @@ public class AppBus {
     }
 
     public void destroy(){
-        unbindNotifyService();
+        mContext = null;
     }
 
     //-------------------------------server---------------------------------------------------------
@@ -125,13 +125,14 @@ public class AppBus {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
-                LogUtil.d("service","update[Notify] mRemoteCallbacks size:"+mRemoteCallbacks.getRegisteredCallbackCount());
+                LogUtil.d("service","[Notify] update: mRemoteCallbacks size="+mRemoteCallbacks.getRegisteredCallbackCount());
+                //这里需要判断控制中心进程有灭有起来?如果没有起来，那么要bindService远程拉起进程，将数据传递过去
                 //添加数据到队列
                 queue.offer(appInfoList);
-                //检查NotifyService
-                //if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
-                bindNotifyService(mContext);
-                //}
+                //检查NotifyService，目前检查mRemoteCallbacks来确定控制中心有没有连接
+                if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
+                    bindNotifyService(mContext);
+                }
                 try {
                     final int N = mRemoteCallbacks.beginBroadcast();
                     for (int i = 0; i < N; i++) {
@@ -163,23 +164,26 @@ public class AppBus {
             ThreadManager.getInstance().ioThread(new Runnable() {
                 @Override
                 public void run() {
-                    Intent service = new Intent(ACTION_NOTIFY);
-                    service.setPackage("");
-
-                    Intent intent = new Intent(ACTION_NOTIFY);
-                    Intent choice = AndroidUtil.createExplicitFromImplicitIntent(mContext,intent);
-                    Intent eintent = null;
-                    if(choice==null){
-
-                    }else{
-                        eintent = new Intent(choice);
-                        boolean res = mContext.bindService(eintent, mNotifyConnection, Service.BIND_AUTO_CREATE);
+                    try {
+                        Intent intent = new Intent(ACTION_NOTIFY);
+                        Intent choice = AndroidUtil.createExplicitFromImplicitIntent(mContext, intent);
+                        Intent eintent = null;
+                        if (choice == null) {
+                            //这里没有找到对应的service，怎么处理？
+                        } else {
+                            eintent = new Intent(choice);
+                            boolean res = mContext.bindService(eintent, mNotifyConnection, Service.BIND_AUTO_CREATE);
+                            LogUtil.d("service","[notify] bindNotifyService: bind service is over eintent="+eintent+", result res="+res);
+                        }
+                    }catch (Exception e){
+                        e.printStackTrace();
+                        LogUtil.d("service","[notify] bindNotifyService: e="+e);
                     }
                 }
             });
         }else{
             List<AppInfoBean> bean = queue.poll();
-            LogUtil.d("service","bindNotifyService[Notify] bean="+bean);
+            LogUtil.d("service","[Notify] bindNotifyService: bean="+bean);
             if(bean!=null){
                 try {
                     mNotifyAidl.notify(bean);
@@ -193,8 +197,12 @@ public class AppBus {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
-                mContext.unbindService(mNotifyConnection);
-                mNotifyAidl = null;
+                try {
+                    mContext.unbindService(mNotifyConnection);
+                    mNotifyAidl = null;
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
     }
@@ -202,15 +210,15 @@ public class AppBus {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mNotifyAidl = NotifyAidl.Stub.asInterface(service);
-            LogUtil.d("service","onServiceConnected[Notify] mNotifyAidl="+mNotifyAidl);
+            LogUtil.d("service","[Notify] onServiceConnected: mNotifyAidl="+mNotifyAidl);
             try {
                 service.linkToDeath(mDeathRecipientNotify, 0);
             } catch (RemoteException e) {
-                LogUtil.d("service","onServiceConnected[Notify]: e1="+e);
+                LogUtil.d("service","[Notify] onServiceConnected: e1="+e);
             }
             //这里进行数据传输
             List<AppInfoBean> bean = queue.poll();
-            LogUtil.d("service","onServiceConnected[Notify] bean="+bean);
+            LogUtil.d("service","[Notify]onServiceConnected: bean="+bean);
             if(bean!=null){
                 try {
                     mNotifyAidl.notify(bean);
@@ -222,13 +230,13 @@ public class AppBus {
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            LogUtil.d("service","onServiceDisconnected[Notify]");
+            LogUtil.d("service","[Notify] onServiceDisconnected");
         }
     };
     private IBinder.DeathRecipient mDeathRecipientNotify = new IBinder.DeathRecipient() {
         @Override
         public void binderDied() {
-            LogUtil.d("service","[Notify]binderDied!!!!!mNotifyAidl="+mNotifyAidl);
+            LogUtil.d("service","[Notify] binderDied!!!!!: mNotifyAidl="+mNotifyAidl);
             if (mNotifyAidl == null) {
                 return;
             }

@@ -30,6 +30,7 @@ public abstract class AppBusService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        LogUtil.d("service","onStartCommand intent"+intent+", flags="+flags+", startId="+startId);
         return START_STICKY/*super.onStartCommand(intent, flags, startId)*/;
     }
 

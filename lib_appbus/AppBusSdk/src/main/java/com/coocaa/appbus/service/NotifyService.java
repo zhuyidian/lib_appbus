@@ -26,6 +26,12 @@ public abstract class NotifyService extends Service {
     }
 
     @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        LogUtil.d("client","onStartCommand[Notify] intent"+intent+", flags="+flags+", startId="+startId);
+        return START_STICKY/*super.onStartCommand(intent, flags, startId)*/;
+    }
+
+    @Override
     public IBinder onBind(Intent intent) {
         LogUtil.d("client","onBind[Notify] intent="+intent+", Thread="+Thread.currentThread().toString());
         return new NotifyAidlImpl();
