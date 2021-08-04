@@ -6,7 +6,6 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="logger[" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -33,9 +32,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47623b0a-0cb8-413c-aa1c-26f9dbbe389a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/AppBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/AppBus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$XBusHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client$XBusHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/core/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/packaged-classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/outputs/aar/AppBusSdk-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/outputs/aar/AppBusSdk-debug.aar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/core/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/core/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/service/AppBusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/service/AppBusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/o_cca9TSOdE_envRGMuBwInM_UE=" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/o_cca9TSOdE_envRGMuBwInM_UE=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/34.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/34.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/outputs/apk/debug/sample-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/outputs/apk/debug/sample-debug.apk" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,29 +262,30 @@
     </state>
     <state x="566" y="201" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1627973170382" />
     <state x="739" y="282" key="FileChooserDialogImpl/49.24.1871.1056@49.24.1871.1056" timestamp="1627929342769" />
-    <state width="1493" height="135" key="GridCell.Tab.0.bottom" timestamp="1628062738261">
+    <state width="1493" height="429" key="GridCell.Tab.0.bottom" timestamp="1628065878807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628062738261" />
-    <state width="1493" height="135" key="GridCell.Tab.0.center" timestamp="1628062738261">
+    <state width="1493" height="429" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628065878807" />
+    <state width="1493" height="429" key="GridCell.Tab.0.center" timestamp="1628065878807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628062738261" />
-    <state width="1493" height="135" key="GridCell.Tab.0.left" timestamp="1628062738261">
+    <state width="1493" height="429" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628065878807" />
+    <state width="1493" height="429" key="GridCell.Tab.0.left" timestamp="1628065878807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628062738261" />
-    <state width="1493" height="135" key="GridCell.Tab.0.right" timestamp="1628062738261">
+    <state width="1493" height="429" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628065878807" />
+    <state width="1493" height="429" key="GridCell.Tab.0.right" timestamp="1628065878807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628062738261" />
+    <state width="1493" height="429" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628065878807" />
     <state x="149" y="96" width="1671" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1627919451297">
       <screen x="49" y="24" width="1871" height="1056" />
     </state>
     <state x="149" y="96" width="1671" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog/49.24.1871.1056@49.24.1871.1056" timestamp="1627919451297" />
-    <state x="674" y="277" width="621" height="522" key="find.popup" timestamp="1627920435661">
-      <screen x="49" y="24" width="1871" height="1056" />
+    <state x="513" y="197" width="570" height="536" key="find.popup" timestamp="1628065883367">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="513" y="197" width="570" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1628065883367" />
     <state x="674" y="277" width="621" height="522" key="find.popup/49.24.1871.1056@49.24.1871.1056" timestamp="1627920435661" />
   </component>
   <component name="debuggerHistoryManager">

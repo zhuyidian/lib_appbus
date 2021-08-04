@@ -27,6 +27,12 @@ public abstract class AppBusService extends Service {
 //        LogUtil.d("service","onCreate"+", Thread="+Thread.currentThread().toString());
 //    }
 
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return START_STICKY/*super.onStartCommand(intent, flags, startId)*/;
+    }
+
     @Override
     public IBinder onBind(Intent intent) {
         LogUtil.d("service","onBind intent="+intent+", Thread="+Thread.currentThread().toString());

@@ -13,6 +13,7 @@ import android.os.IBinder;
 import android.os.Process;
 import android.os.RemoteException;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.coocaa.appbus.AppBus;
 import com.coocaa.appbus.able.INotify;
@@ -82,8 +83,8 @@ public class Client {
             public void run() {
                 LogUtil.d("client","bind service: packageName="+packageName+", action="+action+
                         ", Thread="+Thread.currentThread().toString());
-                Intent service = new Intent(action);
-                service.setPackage(packageName);
+//                Intent service = new Intent(action);
+//                service.setPackage(packageName);
 
                 Intent intent = new Intent(action);
                 Intent choice = AndroidUtil.createExplicitFromImplicitIntent(context,intent);
@@ -94,6 +95,7 @@ public class Client {
                     eintent = new Intent(choice);
 
                     boolean res = context.bindService(eintent, mServiceConnection, Service.BIND_AUTO_CREATE);
+                    LogUtil.d("client","bind service: success eintent="+eintent);
                 }
             }
         });
