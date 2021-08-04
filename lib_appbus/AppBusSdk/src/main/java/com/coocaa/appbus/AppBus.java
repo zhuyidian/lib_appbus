@@ -23,6 +23,7 @@ import com.coocaa.appbus.thread.ThreadManager;
 import com.coocaa.appbus.traffic.AppBusAidl;
 import com.coocaa.appbus.traffic.AppBusCallback;
 import com.coocaa.appbus.traffic.AppInfoBean;
+import com.coocaa.appbus.traffic.NotifyAidl;
 import com.coocaa.appbus.traffic.Request;
 import com.coocaa.appbus.traffic.Response;
 import com.coocaa.appbus.utils.LogUtil;
@@ -165,7 +166,6 @@ public class AppBus {
 
     private void bind(final Context context, final String packageName, final Class<? extends Service> service) {
         ThreadManager.getInstance().ioThread(new Runnable() {
-
             @Override
             public void run() {
                 Intent intent;
@@ -425,6 +425,7 @@ public class AppBus {
     private IUserData userData;
     private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
             = new RemoteCallbackList<AppBusCallback>();
+    public static final String ACTION_NOTIFY="com.coocaa.os.controlcenter.NOTIFY";
 
     /**
      * 注册需要被调用的class.
@@ -485,18 +486,71 @@ public class AppBus {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
-                final int N = mRemoteCallbacks.beginBroadcast();
-                for (int i=0; i<N; i++) {
+                if(mNotifyAidl!=null){
                     try {
-                        mRemoteCallbacks.getBroadcastItem(i).update(appInfoList);
+                        mNotifyAidl.notify(appInfoList);
                     } catch (RemoteException e) {
-                        // The RemoteCallbackList will take care of removing
-                        // the dead object for us.
-                        LogUtil.d("service","update"+", e="+e);
+                        e.printStackTrace();
                     }
                 }
-                mRemoteCallbacks.finishBroadcast();
+                try {
+                    final int N = mRemoteCallbacks.beginBroadcast();
+                    for (int i = 0; i < N; i++) {
+                        try {
+                            mRemoteCallbacks.getBroadcastItem(i).update(appInfoList);
+                        } catch (RemoteException e) {
+                            // The RemoteCallbackList will take care of removing
+                            // the dead object for us.
+                            LogUtil.d("service", "update" + ", e=" + e);
+                        }
+                    }
+                    mRemoteCallbacks.finishBroadcast();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
     }
+
+    //------
+    private NotifyAidl mNotifyAidl;
+    public void bindNotifyService(final Context mContext){
+        ThreadManager.getInstance().ioThread(new Runnable() {
+            @Override
+            public void run() {
+                Intent service = new Intent(ACTION_NOTIFY);
+                service.setPackage("");
+
+                Intent intent = new Intent(ACTION_NOTIFY);
+                Intent choice = createExplicitFromImplicitIntent(mContext,intent);
+                Intent eintent = null;
+                if(choice==null){
+
+                }else{
+                    eintent = new Intent(choice);
+                    boolean res = mContext.bindService(eintent, mNotifyConnection, Service.BIND_AUTO_CREATE);
+                }
+            }
+        });
+    }
+    public void unbindNotifyService(final Context mContext){
+        ThreadManager.getInstance().ioThread(new Runnable() {
+            @Override
+            public void run() {
+                mContext.unbindService(mNotifyConnection);
+                mNotifyAidl = null;
+            }
+        });
+    }
+    ServiceConnection mNotifyConnection = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            mNotifyAidl = NotifyAidl.Stub.asInterface(service);
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+
+        }
+    };
 }

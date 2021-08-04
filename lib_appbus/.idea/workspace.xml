@@ -37,256 +37,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$XBusHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus$XBusHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/AppBus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/able/INotify.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/able/INotify.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/able/ITestCallBack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/able/ITestData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/able/OtherMode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/able/TestData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/able/TestDrawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/able/TestView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppInfoBean$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppInfoBean$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppInfoBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/traffic/AppInfoBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/utils/ViewUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appbus/utils/XAppList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/packaged-classes/debug/classes.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/outputs/aar/AppBusSdk-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/outputs/aar/AppBusSdk-debug.aar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/AppBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/AppBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/INotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/INotify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/ITestCallBack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/ITestData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/IUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/IUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/OtherMode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/TestData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/TestDrawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/BusDrawable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/TestView.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able/BusButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/traffic/AppInfoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/traffic/AppInfoBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/utils/ViewUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/utils/XAppList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/.transforms/7681cb263a0171dc7bd58e3f91581e24.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/.transforms/7681cb263a0171dc7bd58e3f91581e24/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/.transforms/883e01cd53723226c50bdf621f6f6536.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/.transforms/883e01cd53723226c50bdf621f6f6536/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/.transforms/c3e17dbbe90dcd4eb2667f76ffdffb25.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/.transforms/ccd5b566dbe0df24eabbf067fe11c9a9.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/compile_library_classes/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/library_java_res/debug/res.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/runtime_library_classes/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/outputs/aar/tools-debug.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/ajx/extensionconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/dex/debug/mergeDexDebug/out/classes2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_0.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/o_cca9TSOdE_envRGMuBwInM_UE=" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/o_cca9TSOdE_envRGMuBwInM_UE=" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/34.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/34.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/10.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/100.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/101.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/102.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/103.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/104.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/105.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/107.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/108.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/109.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/11.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/111.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/112.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/113.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/114.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/116.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/117.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/118.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/119.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/12.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/120.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/122.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/123.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/124.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/125.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/127.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/128.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/129.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/13.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/130.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/133.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/135.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/136.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/137.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/139.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/14.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/14.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/140.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/145.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/146.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/147.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/148.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/149.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/15.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/151.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/152.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/153.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/154.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/155.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/156.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/157.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/159.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/16.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/16.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/160.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/161.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/162.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/163.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/164.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/165.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/168.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/169.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/17.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/170.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/171.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/172.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/173.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/174.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/175.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/176.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/179.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/18.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/18.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/180.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/181.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/182.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/184.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/185.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/186.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/187.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/188.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/19.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/19.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/190.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/192.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/193.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/194.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/195.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/196.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/197.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/198.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/199.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/20.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/20.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/200.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/201.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/202.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/203.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/204.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/205.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/206.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/207.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/208.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/209.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/21.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/22.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/22.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/23.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/23.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/24.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/24.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/25.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/25.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/26.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/26.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/27.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/27.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/28.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/28.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/29.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/29.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/30.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/30.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/31.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/31.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/32.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/32.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/33.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/33.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/34.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/34.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/35.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/35.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/37.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/37.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/38.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/38.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/41.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/43.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/48.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/49.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/51.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/52.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/53.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/54.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/55.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/56.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/57.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/58.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/59.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/60.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/61.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/62.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/63.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/64.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/65.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/66.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/67.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/68.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/69.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/7.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/70.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/71.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/73.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/74.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/75.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/77.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/78.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/79.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/8.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/80.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/81.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/82.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/83.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/84.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/85.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/86.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/87.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/88.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/89.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/9.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/90.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/91.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/92.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/93.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/95.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/97.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/98.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/outputs/apk/debug/sample-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/outputs/apk/debug/sample-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build/outputs/logs/ajcore.20201126.103832.065.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Administrator\.android\avd\Pixel_3a_API_30_x86.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@172.20.147.46:5555]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -306,18 +66,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="customs" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="customs" type="f1a62948:ProjectNode" />
-                <item name=":sample" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="customs" type="f1a62948:ProjectNode" />
-                <item name=":sample" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="lib_appbus" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -351,35 +100,36 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="true" />
+    <property name="android-custom-viewD:/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/java/com/coocaa/appbus/able/BusButton.java_SELECTED" value="BusButton" />
     <property name="android-custom-viewD:/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/java/com/coocaa/appbus/able/TestView.java_SELECTED" value="TestView" />
     <property name="android.sdk.path" value="$USER_HOME$/software/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="device.picker.selection" value="b2e7acc7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lib_appbus_demo/AppBusServer1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AppBusSdk/src/main/aidl/com/coocaa/appbus/traffic" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library_animation/src/main/res/drawable-xxxhdpi" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.dunn.net" />
       <recent name="com.dunn.sample" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger" />
-      <recent name="$PROJECT_DIR$/sample/src/main/res/layout" />
-      <recent name="$PROJECT_DIR$/tools/src/main/res" />
-      <recent name="$PROJECT_DIR$/sample/src/main/java/com/sample/tools" />
-      <recent name="$PROJECT_DIR$/tools/src/main/java/com/dunn/tools" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.coocaa.appbus.service" />
       <recent name="com.dunn.logger" />
       <recent name="com.sample.tools" />
       <recent name="com.dunn.tools.navigationbar" />
       <recent name="com.dunn.net.listener" />
-      <recent name="com.dunn.net.request" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/library_animation/src/main/res/drawable-xxxhdpi" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\aidl\com\coocaa\appbus\traffic" />
+      <recent name="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger" />
+      <recent name="$PROJECT_DIR$/sample/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/tools/src/main/res" />
+      <recent name="$PROJECT_DIR$/sample/src/main/java/com/sample/tools" />
     </key>
   </component>
   <component name="RunManager">
@@ -475,10 +225,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="614" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1627971878506">
+    <state x="614" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1628047824866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="614" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1627971878506" />
+    <state x="614" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1628047824866" />
     <state x="797" y="246" key="#com.intellij.ide.util.MemberChooser/49.24.1871.1056@49.24.1871.1056" timestamp="1627930667890" />
     <state x="566" y="201" key="FileChooserDialogImpl" timestamp="1627973170382">
       <screen x="0" y="0" width="1536" height="824" />
