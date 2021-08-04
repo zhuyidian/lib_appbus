@@ -69,6 +69,11 @@ public class Client {
         return bind(context,packageName,action);
     }
 
+    public void disconnect(Context context) {
+        unbind(context);
+        LogUtil.d("client","unbind service");
+    }
+
     private boolean bind(final Context context,final String packageName,final String action){
         boolean result = false;
 
@@ -95,7 +100,6 @@ public class Client {
 
         return result;
     }
-
     private void bind(final Context context, final String packageName, final Class<? extends Service> service) {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
@@ -111,12 +115,6 @@ public class Client {
             }
         });
     }
-
-    public void disconnect(Context context) {
-        unbind(context);
-        LogUtil.d("client","unbind service");
-    }
-
     private void unbind(final Context context) {
         ThreadManager.getInstance().ioThread(new Runnable() {
 

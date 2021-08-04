@@ -46,9 +46,18 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class AppBus {
     public static final boolean IS_BUNDLE_DEBUG = true;
     private static AppBus instance = new AppBus();
+    private Context mContext;
 
     public static AppBus getInstance() {
         return instance;
+    }
+
+    public void init(Context context){
+        this.mContext = context.getApplicationContext();
+    }
+
+    public void destroy(){
+        unbindNotifyService();
     }
 
     //-------------------------------server---------------------------------------------------------
@@ -144,15 +153,11 @@ public class AppBus {
 
     //---------------------------------------notify-------------------------------------------------
     private static final String ACTION_NOTIFY="com.coocaa.os.controlcenter.NOTIFY";
-    private Context mContext;
     //队列大小
     private final int QUEUE_LENGTH =100*10;
     //基于内存的阻塞队列
     private BlockingQueue<List<AppInfoBean>> queue =new LinkedBlockingQueue<List<AppInfoBean>>(QUEUE_LENGTH);
     private NotifyAidl mNotifyAidl;
-    public void init(Context context){
-        this.mContext = context.getApplicationContext();
-    }
     private void bindNotifyService(final Context mContext){
         if(mNotifyAidl==null){
             ThreadManager.getInstance().ioThread(new Runnable() {
@@ -184,7 +189,7 @@ public class AppBus {
             }
         }
     }
-    private void unbindNotifyService(final Context mContext){
+    private void unbindNotifyService(){
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
