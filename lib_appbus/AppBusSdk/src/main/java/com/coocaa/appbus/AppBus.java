@@ -499,9 +499,9 @@ public class AppBus {
 //                    }
 //                }
                 LogUtil.d("service","update[Notify] mRemoteCallbacks size:"+mRemoteCallbacks.getRegisteredCallbackCount());
-                if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
+                //if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
                     bindNotifyService(mContext);
-                }
+                //}
                 try {
                     final int N = mRemoteCallbacks.beginBroadcast();
                     for (int i = 0; i < N; i++) {
@@ -524,23 +524,25 @@ public class AppBus {
     //------
     private NotifyAidl mNotifyAidl;
     public void bindNotifyService(final Context mContext){
-        ThreadManager.getInstance().ioThread(new Runnable() {
-            @Override
-            public void run() {
-                Intent service = new Intent(ACTION_NOTIFY);
-                service.setPackage("");
+        if(mNotifyAidl==null){
+            ThreadManager.getInstance().ioThread(new Runnable() {
+                @Override
+                public void run() {
+                    Intent service = new Intent(ACTION_NOTIFY);
+                    service.setPackage("");
 
-                Intent intent = new Intent(ACTION_NOTIFY);
-                Intent choice = createExplicitFromImplicitIntent(mContext,intent);
-                Intent eintent = null;
-                if(choice==null){
+                    Intent intent = new Intent(ACTION_NOTIFY);
+                    Intent choice = createExplicitFromImplicitIntent(mContext,intent);
+                    Intent eintent = null;
+                    if(choice==null){
 
-                }else{
-                    eintent = new Intent(choice);
-                    boolean res = mContext.bindService(eintent, mNotifyConnection, Service.BIND_AUTO_CREATE);
+                    }else{
+                        eintent = new Intent(choice);
+                        boolean res = mContext.bindService(eintent, mNotifyConnection, Service.BIND_AUTO_CREATE);
+                    }
                 }
-            }
-        });
+            });
+        }
     }
     public void unbindNotifyService(final Context mContext){
         ThreadManager.getInstance().ioThread(new Runnable() {
@@ -556,11 +558,29 @@ public class AppBus {
         public void onServiceConnected(ComponentName name, IBinder service) {
             mNotifyAidl = NotifyAidl.Stub.asInterface(service);
             LogUtil.d("service","onServiceConnected[Notify] mNotifyAidl="+mNotifyAidl);
+            try {
+                service.linkToDeath(mDeathRecipientNotify, 0);
+            } catch (RemoteException e) {
+                LogUtil.d("service","onServiceConnected[Notify]: e1="+e);
+            }
+            //这里进行数据传输
+            
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
             LogUtil.d("service","onServiceDisconnected[Notify]");
+        }
+    };
+    private IBinder.DeathRecipient mDeathRecipientNotify = new IBinder.DeathRecipient() {
+        @Override
+        public void binderDied() {
+            LogUtil.d("service","[Notify]binderDied!!!!!mNotifyAidl="+mNotifyAidl);
+            if (mNotifyAidl == null) {
+                return;
+            }
+            mNotifyAidl.asBinder().unlinkToDeath(mDeathRecipientNotify, 0);
+            mNotifyAidl = null;
         }
     };
 }
