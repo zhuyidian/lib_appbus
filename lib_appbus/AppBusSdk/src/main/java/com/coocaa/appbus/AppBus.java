@@ -35,6 +35,8 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  *
@@ -420,13 +422,11 @@ public class AppBus {
         return mXBusAidl.getAppInfo();
     }
 
-    //-------------------------------server--------------------------------------------------------
+    //-------------------------------server---------------------------------------------------------
     private Map<Class<?>, Class<?>> mRegisterClassMap = new HashMap<>();
     private IUserData userData;
     private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
             = new RemoteCallbackList<AppBusCallback>();
-    public static final String ACTION_NOTIFY="com.coocaa.os.controlcenter.NOTIFY";
-    private Context mContext;
 
     public void init(Context context){
         this.mContext = context;
@@ -491,16 +491,12 @@ public class AppBus {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
-//                if(mNotifyAidl!=null){
-//                    try {
-//                        mNotifyAidl.notify(appInfoList);
-//                    } catch (RemoteException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
                 LogUtil.d("service","update[Notify] mRemoteCallbacks size:"+mRemoteCallbacks.getRegisteredCallbackCount());
+                //添加数据到队列
+                queue.offer(appInfoList);
+                //检查NotifyService
                 //if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
-                    bindNotifyService(mContext);
+                bindNotifyService(mContext);
                 //}
                 try {
                     final int N = mRemoteCallbacks.beginBroadcast();
@@ -521,7 +517,13 @@ public class AppBus {
         });
     }
 
-    //------
+    //---------------------------------------notify-------------------------------------------------
+    private static final String ACTION_NOTIFY="com.coocaa.os.controlcenter.NOTIFY";
+    private Context mContext;
+    //队列大小
+    private final int QUEUE_LENGTH =100*10;
+    //基于内存的阻塞队列
+    private BlockingQueue<List<AppInfoBean>> queue =new LinkedBlockingQueue<List<AppInfoBean>>(QUEUE_LENGTH);
     private NotifyAidl mNotifyAidl;
     public void bindNotifyService(final Context mContext){
         if(mNotifyAidl==null){
@@ -542,6 +544,15 @@ public class AppBus {
                     }
                 }
             });
+        }else{
+            List<AppInfoBean> bean = queue.poll();
+            if(bean!=null){
+                try {
+                    mNotifyAidl.notify(queue.poll());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
     public void unbindNotifyService(final Context mContext){
@@ -564,7 +575,14 @@ public class AppBus {
                 LogUtil.d("service","onServiceConnected[Notify]: e1="+e);
             }
             //这里进行数据传输
-            
+            List<AppInfoBean> bean = queue.poll();
+            if(bean!=null){
+                try {
+                    mNotifyAidl.notify(queue.poll());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
         }
 
         @Override
