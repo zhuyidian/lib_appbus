@@ -10,7 +10,7 @@ import com.coocaa.appbus.traffic.AppInfoBean;
 import java.util.List;
 
 /**
- * 由服务端实现
+ * 由服务端实现 ,预留
  */
 public interface IUserData {
     public List<AppInfoBean> getAppInfo();

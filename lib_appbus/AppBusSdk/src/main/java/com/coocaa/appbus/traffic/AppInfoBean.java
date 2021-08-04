@@ -1,19 +1,21 @@
 package com.coocaa.appbus.traffic;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Author:Administrator
+ * Author:zhuyidian
  * Date:2021/7/30 17:53
  * Description:AppInfoBean
  */
 public class AppInfoBean implements Parcelable {
     private Bitmap mIcon;
-    private String label;
-    private Intent launchIntent;
+    //private String label;
+    //private Intent launchIntent;
+    private PackageInfo packageInfo;
     public static final Creator<AppInfoBean> CREATOR = new Creator<AppInfoBean>() {
         public AppInfoBean createFromParcel(Parcel in) {
             return new AppInfoBean(in);
@@ -26,19 +28,20 @@ public class AppInfoBean implements Parcelable {
 
     public AppInfoBean(){}
 
-    public AppInfoBean(Bitmap icon,String label,Intent intent) {
+    public AppInfoBean(Bitmap icon,PackageInfo info) {
         this.mIcon = icon;
-        this.label = label;
-        this.launchIntent = intent;
+        this.packageInfo = info;
+//        this.label = label;
+//        this.launchIntent = intent;
     }
 
     private AppInfoBean(Parcel in) {
         if (in.readInt() != 0) {
             this.mIcon = (Bitmap)Bitmap.CREATOR.createFromParcel(in);
         }
-        this.label = in.readString();
+//        this.label = in.readString();
         if (in.readInt() != 0) {
-            this.launchIntent = (Intent)Intent.CREATOR.createFromParcel(in);
+            this.packageInfo = (PackageInfo)PackageInfo.CREATOR.createFromParcel(in);
         }
     }
 
@@ -55,12 +58,18 @@ public class AppInfoBean implements Parcelable {
             dest.writeInt(1);
             this.mIcon.writeToParcel(dest, 0);
         }
-        dest.writeString(this.label);
-        if(this.launchIntent == null){
+//        dest.writeString(this.label);
+//        if(this.launchIntent == null){
+//            dest.writeInt(0);
+//        }else{
+//            dest.writeInt(1);
+//            this.launchIntent.writeToParcel(dest, 0);
+//        }
+        if(this.packageInfo == null){
             dest.writeInt(0);
         }else{
             dest.writeInt(1);
-            this.launchIntent.writeToParcel(dest, 0);
+            this.packageInfo.writeToParcel(dest, 0);
         }
     }
 
@@ -72,19 +81,27 @@ public class AppInfoBean implements Parcelable {
         this.mIcon = bitmap;
     }
 
-    public String getLabel() {
-        return label;
+    public PackageInfo getPackageInfo() {
+        return this.packageInfo;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
+    public void setPackageInfo(PackageInfo info) {
+        this.packageInfo = info;
     }
 
-    public Intent getLaunchIntent() {
-        return launchIntent;
-    }
-
-    public void setLaunchIntent(Intent intent) {
-        this.launchIntent = intent;
-    }
+//    public String getLabel() {
+//        return label;
+//    }
+//
+//    public void setLabel(String label) {
+//        this.label = label;
+//    }
+//
+//    public Intent getLaunchIntent() {
+//        return launchIntent;
+//    }
+//
+//    public void setLaunchIntent(Intent intent) {
+//        this.launchIntent = intent;
+//    }
 }

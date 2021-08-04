@@ -10,4 +10,5 @@ import java.util.List;
 public interface INotify {
     public void update(List<AppInfoBean> appInfoList);
     public void serverKill();
+    public void connectStatus(boolean status);
 }

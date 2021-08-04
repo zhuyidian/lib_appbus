@@ -224,6 +224,9 @@ public class AppBus {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mXBusAidl = AppBusAidl.Stub.asInterface(service);
+            if(mXBusAidl!=null && notify!=null){
+                notify.connectStatus(true);
+            }
             LogUtil.d("client","onServiceConnected: mXBusAidl="+mXBusAidl+", Thread="+Thread.currentThread().toString());
             try {
                 service.linkToDeath(mDeathRecipient, 0);
@@ -249,6 +252,9 @@ public class AppBus {
         @Override
         public void onServiceDisconnected(ComponentName name) {
             LogUtil.d("client","onServiceDisconnected: ComponentName:" + name);
+            if(notify!=null){
+                notify.connectStatus(false);
+            }
             //交给mDeathRecipient去释放
             //mXBusAidl = null;
         }
