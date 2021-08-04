@@ -17,6 +17,7 @@ import android.text.TextUtils;
 
 import com.coocaa.appbus.able.INotify;
 import com.coocaa.appbus.able.IUserData;
+import com.coocaa.appbus.core.Client;
 import com.coocaa.appbus.joor.Reflect;
 import com.coocaa.appbus.service.AppBusService;
 import com.coocaa.appbus.thread.ThreadManager;
@@ -26,6 +27,7 @@ import com.coocaa.appbus.traffic.AppInfoBean;
 import com.coocaa.appbus.traffic.NotifyAidl;
 import com.coocaa.appbus.traffic.Request;
 import com.coocaa.appbus.traffic.Response;
+import com.coocaa.appbus.utils.AndroidUtil;
 import com.coocaa.appbus.utils.LogUtil;
 import com.google.gson.Gson;
 
@@ -42,384 +44,11 @@ import java.util.concurrent.LinkedBlockingQueue;
  *
  */
 public class AppBus {
-    public static final String ACTION="com.coocaa.os.controlcenter.APP_INFO";
     public static final boolean IS_BUNDLE_DEBUG = true;
     private static AppBus instance = new AppBus();
 
-    //-------------------------------client--------------------------------------------------------
-    private AppBusAidl mXBusAidl;
-    private INotify notify;
     public static AppBus getInstance() {
         return instance;
-    }
-
-    public void init(Context context,INotify notify) {
-        this.notify = notify;
-        bind(context, "", AppBusService.class);
-    }
-
-    public void init(Context context, String packageName,INotify notify) {
-        this.notify = notify;
-        bind(context, packageName, AppBusService.class);
-    }
-
-    public void init(Context context, Class<? extends Service> service,INotify notify) {
-        this.notify = notify;
-        bind(context, "", service);
-    }
-
-    public boolean init(Context context,String packageName,String action,INotify notify){
-        this.notify = notify;
-        return bind(context,packageName,action);
-    }
-
-    private boolean bind(final Context context,final String packageName,final String action){
-        boolean result = false;
-
-        ThreadManager.getInstance().ioThread(new Runnable() {
-            @Override
-            public void run() {
-                LogUtil.d("client","bind service: packageName="+packageName+", action="+action+
-                        ", Thread="+Thread.currentThread().toString());
-                Intent service = new Intent(action);
-                service.setPackage(packageName);
-
-                Intent intent = new Intent(action);
-                Intent choice = createExplicitFromImplicitIntent(context,intent);
-                Intent eintent = null;
-                if(choice==null){
-
-                }else{
-                    eintent = new Intent(choice);
-
-                    boolean res = context.bindService(eintent, mServiceConnection, Service.BIND_AUTO_CREATE);
-                }
-            }
-        });
-
-        return result;
-    }
-
-    /***
-     * 绑定service检查
-     * Android L (lollipop, API 21) introduced a new problem when trying to invoke implicit intent,
-     * "java.lang.IllegalArgumentException: Service Intent must be explicit"
-     *
-     * If you are using an implicit intent, and know only 1 target would answer this intent,
-     * This method will help you turn the implicit intent into the explicit form.
-     *
-     * Inspired from SO answer: http://stackoverflow.com/a/26318757/1446466
-     * @param context
-     * @param implicitIntent - The original implicit intent
-     * @return Explicit Intent created from the implicit original intent
-     */
-    public Intent createExplicitFromImplicitIntent(Context context, Intent implicitIntent) {
-        // Retrieve all services that can match the given intent
-        PackageManager pm = context.getPackageManager();
-        List<ResolveInfo> resolveInfo = pm.queryIntentServices(implicitIntent, 0);
-        LogUtil.d("client","createExplicitFromImplicitIntent: action="+implicitIntent.getAction());
-        LogUtil.d("client","createExplicitFromImplicitIntent: localpackageName="+context.getPackageName());
-        LogUtil.d("client","createExplicitFromImplicitIntent: resolveInfo.size="+(resolveInfo!=null?resolveInfo.size():"null"));
-        for(ResolveInfo info : resolveInfo){
-            LogUtil.d("client","createExplicitFromImplicitIntent: packageName="+info.serviceInfo.packageName+
-                    ", className="+info.serviceInfo.name);
-        }
-
-        // Make sure only one match was found
-        if (resolveInfo == null || resolveInfo.size() <=0) {
-            return null;
-        }
-
-        Intent explicitIntent = new Intent(implicitIntent);
-        boolean result = false;
-        //过滤本地
-        for(ResolveInfo info : resolveInfo){
-            if(!info.serviceInfo.packageName.equals(context.getPackageName())){
-                // Get component info and create ComponentName
-//                ResolveInfo serviceInfo = resolveInfo.get(0);
-                ResolveInfo serviceInfo = info;
-                String packageName = serviceInfo.serviceInfo.packageName;
-                String className = serviceInfo.serviceInfo.name;
-                LogUtil.d("client","createExplicitFromImplicitIntent: !!!bind!!! packageName="+packageName+", className="+className);
-                ComponentName component = new ComponentName(packageName, className);
-
-                // Set the component to be explicit
-                explicitIntent.setComponent(component);
-                result = true;
-                break;
-            }
-        }
-
-
-
-        // Create a new intent. Use the old one for extras and such reuse
-//        Intent explicitIntent = new Intent(implicitIntent.getAction());
-//        explicitIntent.setAction(implicitIntent.getAction());
-//        // Set the component to be explicit
-//        explicitIntent.setComponent(component);
-//        explicitIntent.setPackage(packageName);
-
-        if(result){
-            return explicitIntent;
-        }else{
-            return null;
-        }
-    }
-
-    private void bind(final Context context, final String packageName, final Class<? extends Service> service) {
-        ThreadManager.getInstance().ioThread(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent;
-                if (TextUtils.isEmpty(packageName)) {
-                    intent = new Intent(context, service);
-                } else { // getName:com.coocaa.appbus.service.XBusService
-                    intent = new Intent();
-                    intent.setClassName(packageName, service.getName());
-                }
-                context.bindService(intent, mServiceConnection, Context.BIND_AUTO_CREATE);
-            }
-        });
-    }
-
-    public void disconnect(Context context) {
-        unbind(context);
-        LogUtil.d("client","unbind service");
-    }
-
-    private void unbind(final Context context) {
-        ThreadManager.getInstance().ioThread(new Runnable() {
-
-            @Override
-            public void run() {
-                if(mXBusAidl!=null){
-                    try {
-                        mXBusAidl.unregister(mCallback);
-                    } catch (RemoteException e) {
-                        e.printStackTrace();
-                    }
-                }
-                context.unbindService(mServiceConnection);
-                mXBusAidl = null;
-                notify = null;
-            }
-        });
-    }
-    private IBinder.DeathRecipient mDeathRecipient = new IBinder.DeathRecipient() {
-        @Override
-        public void binderDied() {
-            LogUtil.d("client","binderDied!!!!!mXBusAidl="+mXBusAidl);
-            if (mXBusAidl == null) {
-                return;
-            }
-            mXBusAidl.asBinder().unlinkToDeath(mDeathRecipient, 0);
-            mXBusAidl = null;
-            if(notify!=null){
-                notify.serverKill();
-            }
-            notify=null;
-            //是否需要重新绑定服务
-            //bind();
-        }
-    };
-    ServiceConnection mServiceConnection = new ServiceConnection() {
-        @Override
-        public void onServiceConnected(ComponentName name, IBinder service) {
-            mXBusAidl = AppBusAidl.Stub.asInterface(service);
-            if(mXBusAidl!=null && notify!=null){
-                notify.connectStatus(true);
-            }
-            LogUtil.d("client","onServiceConnected: mXBusAidl="+mXBusAidl+", Thread="+Thread.currentThread().toString());
-            try {
-                service.linkToDeath(mDeathRecipient, 0);
-            } catch (RemoteException e) {
-                LogUtil.d("client","onServiceConnected: e1="+e);
-            }
-            // 注册回调.
-            ThreadManager.getInstance().ioThread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        LogUtil.d("client","onServiceConnected register callback: client PID="+Process.myPid()+
-                                ", Thread="+Thread.currentThread().toString());
-                        mXBusAidl.register(mCallback, Process.myPid());
-                    } catch (RemoteException e) {
-                        e.printStackTrace();
-                        LogUtil.d("client","onServiceConnected: e2="+e);
-                    }
-                }
-            });
-        }
-
-        @Override
-        public void onServiceDisconnected(ComponentName name) {
-            LogUtil.d("client","onServiceDisconnected: ComponentName:" + name);
-            if(notify!=null){
-                notify.connectStatus(false);
-            }
-            //交给mDeathRecipient去释放
-            //mXBusAidl = null;
-        }
-    };
-    /**
-     * 注册回调，用于有回调的函数处理.
-     */
-    private AppBusCallback mCallback = new AppBusCallback.Stub() {
-        @Override
-        public void update(List<AppInfoBean> appInfoList) throws RemoteException {
-            if(notify!=null){
-                notify.update(appInfoList);
-            }
-        }
-
-        /**
-         * 销毁相关的回调记录.
-         */
-//        @Override
-//        public void gc() throws RemoteException {
-//        }
-    };
-
-    /**
-     * 测试调用情况.
-     */
-    public <T> T getCreateCall(Class<T> tClass) {
-        try {
-            Class<?>[] interfaces = new Class[]{tClass};
-            XBusHandler handler = new XBusHandler(tClass, mXBusAidl);
-            Object proxy = Proxy.newProxyInstance(tClass.getClassLoader(), interfaces, handler);
-            LogUtil.d("client","get proxy: proxy="+proxy);
-            return (T) proxy;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    /**
-     * 动态代理的 InvocationHandler invoke 处理.
-     */
-    class XBusHandler implements InvocationHandler {
-
-        private Gson gson = new Gson();
-
-        private Class<?> clazz;
-        private AppBusAidl xBusAidl;
-
-        public XBusHandler(Class<?> clazz, AppBusAidl xBusAidl) {
-            this.clazz = clazz;
-            this.xBusAidl = xBusAidl;
-        }
-
-        @Override
-        public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-            String methodName = method.getName();
-            String clazzName = clazz.getName();
-            LogUtil.d("client","invoke: clazzName="+clazzName);
-            LogUtil.d("client","invoke: methodName="+methodName);
-            LogUtil.d("client","invoke: param="+args);
-
-            if ("Object".equals(clazzName)) {
-                return null;
-            }
-
-            Request request = new Request();
-            try{
-                if (args == null || args[0] == null) {
-
-                }else{
-                    // 尝试获取所有参数，判断是否拥有接口.
-                    int length = args.length;
-                    for (int i = 0; i < length; ++i) {
-                        Class<?>[] classes = method.getParameterTypes();
-                        if (classes[i].isInterface()) {
-                            Object parameter = args[i];
-                        }
-                    }
-                }
-
-                if (IS_BUNDLE_DEBUG) {
-                    // bundle 传递 args. 方法，类名
-                    Bundle bundle = new Bundle();
-                    // bundle.putInt("args", (Integer) args[0]);
-                    bundle.putSerializable(Request.ARGS_KEY, args);
-                    bundle.putString(Request.METHOD_KEY, methodName);
-                    bundle.putString(Request.CLAZZ_KEY, clazzName);
-                    request.setBundle(bundle);
-                } else {
-                    // 保存类名，方法，参数值. json 方式传递
-                    Request.ClassData classData = new Request.ClassData();
-                    classData.clazz = clazzName;
-                    classData.method = methodName;
-                    classData.params = null != args ? gson.toJson(args) : null;
-                    request.setData(gson.toJson(classData));
-                }
-                // 3. AIDL 远程调用 （函数执行过程)
-                LogUtil.d("client","Bp(run)--->: request="+request.toString());
-                Response response = xBusAidl.run(request);
-                LogUtil.d("client","Bp(run)<---: response="+response.toString());
-                // 4. 处理 返回值.
-                if (IS_BUNDLE_DEBUG) {
-                    Bundle bundle1 = response.getBResult();
-                    if (null != bundle1) {
-                        bundle1.setClassLoader(getClass().getClassLoader());
-                        //return bundle1.getSerializable(Response.RESULT_KEY);
-                        return (AppInfoBean)bundle1.getParcelable(Response.RESULT_KEY_PARCELABLE);
-                    }
-                }
-                return gson.fromJson(response.getResult(), method.getReturnType());
-            }catch (Exception e){
-                e.printStackTrace();
-                LogUtil.d("client","invoke: e="+e);
-            }
-
-            return null;
-        }
-    }
-
-    /**
-     * 检查是否安装SDK
-     * @param context
-     * @return
-     */
-    public boolean isInstallSdk(Context context){
-        boolean result = false;
-
-        try {
-            String localPackageName = context.getPackageName();
-            LogUtil.d("client","localPackageName="+localPackageName);
-            PackageManager pm = context.getPackageManager();
-            List<ApplicationInfo> list = pm.getInstalledApplications(PackageManager.GET_META_DATA);
-            LogUtil.d("client","list.size="+(list!=null?list.size():0));
-            for(ApplicationInfo info : list){
-                LogUtil.d("client","packageName="+info.packageName);
-                if(info.metaData!=null && !localPackageName.equals(info.packageName)){
-                    boolean value = info.metaData.getBoolean("com.coocaa.appbus.get",false);
-                    LogUtil.d("client","metadata:packageName="+info.packageName+", value="+value);
-                    if(value==true){
-                        result = true;
-                        break;
-                    }
-                }
-            }
-//            ApplicationInfo appInfo = pm.getApplicationInfo(getPackageName(), PackageManager.GET_META_DATA);
-//            String value = appInfo.metaData.getString("api_key");
-        }
-//        catch (PackageManager.NameNotFoundException e) {
-//            e.printStackTrace();
-//        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-
-        return result;
-    }
-
-    public List<AppInfoBean> getAppInfo() throws RemoteException {
-        if(mXBusAidl==null){
-            return null;
-        }
-        return mXBusAidl.getAppInfo();
     }
 
     //-------------------------------server---------------------------------------------------------
@@ -427,10 +56,6 @@ public class AppBus {
     private IUserData userData;
     private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
             = new RemoteCallbackList<AppBusCallback>();
-
-    public void init(Context context){
-        this.mContext = context;
-    }
 
     /**
      * 注册需要被调用的class.
@@ -525,7 +150,10 @@ public class AppBus {
     //基于内存的阻塞队列
     private BlockingQueue<List<AppInfoBean>> queue =new LinkedBlockingQueue<List<AppInfoBean>>(QUEUE_LENGTH);
     private NotifyAidl mNotifyAidl;
-    public void bindNotifyService(final Context mContext){
+    public void init(Context context){
+        this.mContext = context.getApplicationContext();
+    }
+    private void bindNotifyService(final Context mContext){
         if(mNotifyAidl==null){
             ThreadManager.getInstance().ioThread(new Runnable() {
                 @Override
@@ -534,7 +162,7 @@ public class AppBus {
                     service.setPackage("");
 
                     Intent intent = new Intent(ACTION_NOTIFY);
-                    Intent choice = createExplicitFromImplicitIntent(mContext,intent);
+                    Intent choice = AndroidUtil.createExplicitFromImplicitIntent(mContext,intent);
                     Intent eintent = null;
                     if(choice==null){
 
@@ -546,16 +174,17 @@ public class AppBus {
             });
         }else{
             List<AppInfoBean> bean = queue.poll();
+            LogUtil.d("service","bindNotifyService[Notify] bean="+bean);
             if(bean!=null){
                 try {
-                    mNotifyAidl.notify(queue.poll());
+                    mNotifyAidl.notify(bean);
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
             }
         }
     }
-    public void unbindNotifyService(final Context mContext){
+    private void unbindNotifyService(final Context mContext){
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
@@ -564,7 +193,7 @@ public class AppBus {
             }
         });
     }
-    ServiceConnection mNotifyConnection = new ServiceConnection() {
+    private ServiceConnection mNotifyConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mNotifyAidl = NotifyAidl.Stub.asInterface(service);
