@@ -92,7 +92,7 @@ public class Client {
                 }else{
                     eintent = new Intent(choice);
                     boolean res = context.bindService(eintent, mServiceConnection, Service.BIND_AUTO_CREATE);
-                    LogUtil.d("client","bind service: success eintent="+eintent);
+                    LogUtil.d("client","bind service: success eintent="+eintent+", result res="+res);
                 }
             }
         });
