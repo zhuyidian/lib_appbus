@@ -127,10 +127,10 @@ public class AppBus {
             public void run() {
                 LogUtil.d("service","[Notify] update: mRemoteCallbacks size="+mRemoteCallbacks.getRegisteredCallbackCount());
                 //这里需要判断控制中心进程有灭有起来?如果没有起来，那么要bindService远程拉起进程，将数据传递过去
-                //添加数据到队列
-                queue.offer(appInfoList);
                 //检查NotifyService，目前检查mRemoteCallbacks来确定控制中心有没有连接
                 if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
+                    //添加数据到队列
+                    queue.offer(appInfoList);
                     bindNotifyService(mContext);
                 }
                 try {
