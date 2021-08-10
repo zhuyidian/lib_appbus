@@ -9,6 +9,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
+import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Process;
 import android.os.RemoteException;
@@ -40,6 +41,7 @@ import java.util.List;
  */
 public class Client {
     public static final String ACTION="com.coocaa.os.controlcenter.APP_INFO";
+
     private static Client instance = new Client();
 
     public static Client getInstance() {
@@ -47,32 +49,37 @@ public class Client {
     }
 
     //-------------------------------client--------------------------------------------------------
+    private Context mContext;
     private AppBusAidl mXBusAidl;
     private INotify notify;
+    private HandlerThread handlerThread;
 
     public void init(Context context, INotify notify) {
+        this.mContext = context;
         this.notify = notify;
         bind(context, "", AppBusService.class);
     }
 
     public void init(Context context, String packageName,INotify notify) {
+        this.mContext = context;
         this.notify = notify;
         bind(context, packageName, AppBusService.class);
     }
 
     public void init(Context context, Class<? extends Service> service, INotify notify) {
+        this.mContext = context;
         this.notify = notify;
         bind(context, "", service);
     }
 
     public boolean init(Context context,String packageName,String action,INotify notify){
+        this.mContext = context;
         this.notify = notify;
         return bind(context,packageName,action);
     }
 
     public void destroy(Context context) {
         unbind(context);
-        LogUtil.d("client","unbind service");
     }
 
     private boolean bind(final Context context,final String packageName,final String action){
@@ -81,24 +88,48 @@ public class Client {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
-                LogUtil.d("client","bind service: packageName="+packageName+", action="+action+
-                        ", Thread="+Thread.currentThread().toString());
+                try {
+                    LogUtil.d("client", "bind service: packageName=" + packageName + ", action=" + action +
+                            ", Thread=" + Thread.currentThread().toString());
 
-                Intent intent = new Intent(action);
-                Intent choice = AndroidUtil.createExplicitFromImplicitIntent(context,intent);
-                //Intent eintent = null;
-                if(choice==null){
-                    //这里没有找到对应的service，怎么处理？
-                }else{
-                    //eintent = new Intent(choice);
-                    boolean res = context.bindService(choice, mServiceConnection, Service.BIND_AUTO_CREATE);
-                    LogUtil.d("client","bind service: success choice="+choice+", result res="+res);
+                    Intent intent = new Intent(action);
+                    final Intent choice = AndroidUtil.createExplicitFromImplicitIntent(context, intent);
+                    //Intent eintent = null;
+                    if (choice == null) {
+                        //这里没有找到对应的service，怎么处理？
+                    } else {
+                        //eintent = new Intent(choice);
+                        //启动延时检查机制
+                        ThreadManager.getInstance().ioThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                try {
+                                    LogUtil.d("client", "bind service again: mXBusAidl="+mXBusAidl);
+                                    if (mXBusAidl == null) {
+                                        LogUtil.d("client", "bind service again: timeout!!!!!!!");
+                                        context.unbindService(mServiceConnection);
+                                        boolean res = context.bindService(choice, mServiceConnection, Service.BIND_AUTO_CREATE);
+                                        LogUtil.d("client", "bind service again: success choice=" + choice + ", result res=" + res);
+                                    }
+                                }catch (Exception e){
+                                    e.printStackTrace();
+                                    LogUtil.d("client", "bind service again: e="+e);
+                                }
+                            }
+                        }, 5000);
+                        boolean res = context.bindService(choice, mServiceConnection, Service.BIND_AUTO_CREATE);
+                        LogUtil.d("client", "bind service: success choice=" + choice + ", result res=" + res);
+                    }
+                }catch (Exception e){
+                    e.printStackTrace();
+                    LogUtil.d("client", "bind service: e1=" + e);
                 }
             }
         });
 
         return result;
     }
+
     private void bind(final Context context, final String packageName, final Class<? extends Service> service) {
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
@@ -114,53 +145,69 @@ public class Client {
             }
         });
     }
+
     private void unbind(final Context context) {
         ThreadManager.getInstance().ioThread(new Runnable() {
-
             @Override
             public void run() {
-                if(mXBusAidl!=null){
-                    try {
-                        mXBusAidl.unregister(mCallback);
-                    } catch (RemoteException e) {
-                        e.printStackTrace();
+                try {
+                    LogUtil.d("client","unbind service: mXBusAidl="+mXBusAidl);
+                    if (mXBusAidl != null) {
+                        try {
+                            mXBusAidl.unregister(mCallback);
+                        } catch (RemoteException e) {
+                            e.printStackTrace();
+                        }
                     }
+                    context.unbindService(mServiceConnection);
+                    mXBusAidl = null;
+                    notify = null;
+                    mContext = null;
+                }catch (Exception e){
+                    e.printStackTrace();
+                    LogUtil.d("client","unbind service: e="+e);
                 }
-                context.unbindService(mServiceConnection);
-                mXBusAidl = null;
-                notify = null;
             }
         });
     }
+
     private IBinder.DeathRecipient mDeathRecipient = new IBinder.DeathRecipient() {
         @Override
         public void binderDied() {
-            LogUtil.d("client","binderDied!!!!!mXBusAidl="+mXBusAidl);
-            if (mXBusAidl == null) {
-                return;
+            try {
+                LogUtil.d("client", "binderDied!!!!!mXBusAidl=" + mXBusAidl);
+                if (mXBusAidl != null) mXBusAidl.asBinder().unlinkToDeath(mDeathRecipient, 0);
+                //mXBusAidl = null;
+                if (notify != null) {
+                    notify.serverKill();
+                }
+                //notify=null;
+                //这里再次解除绑定
+                if (mContext != null) {
+                    unbind(mContext);
+                }
+                //是否需要重新绑定服务
+                //bind();
+            }catch (Exception e){
+                e.printStackTrace();
+                LogUtil.d("client", "binderDied!!!!!e=" + e);
             }
-            mXBusAidl.asBinder().unlinkToDeath(mDeathRecipient, 0);
-            mXBusAidl = null;
-            if(notify!=null){
-                notify.serverKill();
-            }
-            notify=null;
-            //是否需要重新绑定服务
-            //bind();
         }
     };
+
     ServiceConnection mServiceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            mXBusAidl = AppBusAidl.Stub.asInterface(service);
-            if(mXBusAidl!=null && notify!=null){
-                notify.connectStatus(true);
-            }
-            LogUtil.d("client","onServiceConnected: mXBusAidl="+mXBusAidl+", Thread="+Thread.currentThread().toString());
             try {
+                mXBusAidl = AppBusAidl.Stub.asInterface(service);
+                if (mXBusAidl != null && notify != null) {
+                    notify.connectStatus(true);
+                }
+                LogUtil.d("client", "onServiceConnected: mXBusAidl=" + mXBusAidl + ", Thread=" + Thread.currentThread().toString());
                 service.linkToDeath(mDeathRecipient, 0);
-            } catch (RemoteException e) {
-                LogUtil.d("client","onServiceConnected: e1="+e);
+            }catch (Exception e){
+                e.printStackTrace();
+                LogUtil.d("client", "onServiceConnected: e1=" + e);
             }
             // 注册回调.
             ThreadManager.getInstance().ioThread(new Runnable() {
@@ -188,6 +235,7 @@ public class Client {
             //mXBusAidl = null;
         }
     };
+
     /**
      * 注册回调，用于有回调的函数处理.
      */

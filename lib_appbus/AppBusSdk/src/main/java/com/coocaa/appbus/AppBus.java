@@ -109,31 +109,47 @@ public class AppBus {
     }
 
     public void registerListener(AppBusCallback cb){
-        if(mRemoteCallbacks!=null)mRemoteCallbacks.register(cb);
+        try {
+            if (mRemoteCallbacks != null) mRemoteCallbacks.register(cb);
+        }catch (Exception e){
+            e.printStackTrace();
+            LogUtil.d("service","register listener e="+e);
+        }
     }
 
     public void unregisterListener(AppBusCallback cb){
-        if(mRemoteCallbacks!=null)mRemoteCallbacks.unregister(cb);
+        try {
+            if (mRemoteCallbacks != null) mRemoteCallbacks.unregister(cb);
+        }catch (Exception e){
+            e.printStackTrace();
+            LogUtil.d("service","unregister listener e="+e);
+        }
     }
 
     public void killListener(){
-        if(mRemoteCallbacks!=null)mRemoteCallbacks.kill();
+        try {
+            if (mRemoteCallbacks != null) mRemoteCallbacks.kill();
+        }catch (Exception e){
+            e.printStackTrace();
+            LogUtil.d("service","kill listener e="+e);
+        }
     }
 
     public void update(final List<AppInfoBean> appInfoList){
-        LogUtil.d("service","update appInfoList:"+(appInfoList!=null?appInfoList.size():"null"));
+        LogUtil.d("service","update: appInfoList="+(appInfoList!=null?appInfoList.size():"null"));
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
-                LogUtil.d("service","[Notify] update: mRemoteCallbacks size="+mRemoteCallbacks.getRegisteredCallbackCount());
-                //这里需要判断控制中心进程有灭有起来?如果没有起来，那么要bindService远程拉起进程，将数据传递过去
-                //检查NotifyService，目前检查mRemoteCallbacks来确定控制中心有没有连接
-                if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
-                    //添加数据到队列
-                    queue.offer(appInfoList);
-                    bindNotifyService(mContext);
-                }
                 try {
+                    LogUtil.d("service","[Notify] update: mRemoteCallbacks size="+mRemoteCallbacks.getRegisteredCallbackCount());
+                    //这里需要判断控制中心进程有灭有起来?如果没有起来，那么要bindService远程拉起进程，将数据传递过去
+                    //检查NotifyService，目前检查mRemoteCallbacks来确定控制中心有没有连接
+                    //if(mRemoteCallbacks.getRegisteredCallbackCount()<=0){
+                        //添加数据到队列
+                        queue.offer(appInfoList);
+                        bindNotifyService(mContext);
+                    //}
+
                     final int N = mRemoteCallbacks.beginBroadcast();
                     for (int i = 0; i < N; i++) {
                         try {
@@ -147,6 +163,7 @@ public class AppBus {
                     mRemoteCallbacks.finishBroadcast();
                 }catch (Exception e){
                     e.printStackTrace();
+                    LogUtil.d("service", "update: e="+e);
                 }
             }
         });
@@ -166,30 +183,49 @@ public class AppBus {
                 public void run() {
                     try {
                         Intent intent = new Intent(ACTION_NOTIFY);
-                        Intent choice = AndroidUtil.createExplicitFromImplicitIntent(mContext, intent);
+                        final Intent choice = AndroidUtil.createExplicitFromImplicitIntent(mContext, intent);
                         //Intent eintent = null;
                         if (choice == null) {
                             //这里没有找到对应的service，怎么处理？
                         } else {
                             //eintent = new Intent(choice);
+                            //启动延时检查机制
+                            ThreadManager.getInstance().ioThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    try {
+                                        LogUtil.d("service", "[notify] bindNotifyService again: mNotifyAidl="+mNotifyAidl);
+                                        if (mNotifyAidl == null) {
+                                            LogUtil.d("service", "[notify] bindNotifyService again: timeout!!!!!!!");
+                                            mContext.unbindService(mNotifyConnection);
+                                            boolean res = mContext.bindService(choice, mNotifyConnection, Service.BIND_AUTO_CREATE);
+                                            LogUtil.d("service", "[notify] bindNotifyService again: bind service is over choice="+choice+", result res="+res);
+                                        }
+                                    }catch (Exception e){
+                                        e.printStackTrace();
+                                        LogUtil.d("service", "[notify] bindNotifyService again: e="+e);
+                                    }
+                                }
+                            }, 5000);
                             boolean res = mContext.bindService(choice, mNotifyConnection, Service.BIND_AUTO_CREATE);
                             LogUtil.d("service","[notify] bindNotifyService: bind service is over choice="+choice+", result res="+res);
                         }
                     }catch (Exception e){
                         e.printStackTrace();
-                        LogUtil.d("service","[notify] bindNotifyService: e="+e);
+                        LogUtil.d("service","[notify] bindNotifyService: e1="+e);
                     }
                 }
             });
         }else{
-            List<AppInfoBean> bean = queue.poll();
-            LogUtil.d("service","[Notify] bindNotifyService: bean="+bean);
-            if(bean!=null){
-                try {
+            try {
+                List<AppInfoBean> bean = queue.poll();
+                LogUtil.d("service","[Notify] bindNotifyService: notify bean="+bean);
+                if(bean!=null){
                     mNotifyAidl.notify(bean);
-                } catch (RemoteException e) {
-                    e.printStackTrace();
                 }
+            } catch (RemoteException e) {
+                e.printStackTrace();
+                LogUtil.d("service","[Notify] bindNotifyService: e1="+e);
             }
         }
     }
@@ -198,10 +234,13 @@ public class AppBus {
             @Override
             public void run() {
                 try {
+                    LogUtil.d("service","[Notify] unbindNotifyService: mNotifyAidl="+mNotifyAidl);
                     mContext.unbindService(mNotifyConnection);
                     mNotifyAidl = null;
                 }catch (Exception e){
                     e.printStackTrace();
+                    mNotifyAidl = null;
+                    LogUtil.d("service","[Notify] unbindNotifyService: e="+e);
                 }
             }
         });
@@ -209,22 +248,23 @@ public class AppBus {
     private ServiceConnection mNotifyConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            mNotifyAidl = NotifyAidl.Stub.asInterface(service);
-            LogUtil.d("service","[Notify] onServiceConnected: mNotifyAidl="+mNotifyAidl);
             try {
+                mNotifyAidl = NotifyAidl.Stub.asInterface(service);
+                LogUtil.d("service", "[Notify] onServiceConnected: mNotifyAidl=" + mNotifyAidl);
                 service.linkToDeath(mDeathRecipientNotify, 0);
-            } catch (RemoteException e) {
-                LogUtil.d("service","[Notify] onServiceConnected: e1="+e);
-            }
-            //这里进行数据传输
-            List<AppInfoBean> bean = queue.poll();
-            LogUtil.d("service","[Notify] onServiceConnected: list size="+(bean!=null?bean.size():"null"));
-            if(bean!=null){
-                try {
-                    mNotifyAidl.notify(bean);
-                } catch (RemoteException e) {
-                    e.printStackTrace();
+                //这里进行数据传输
+                List<AppInfoBean> bean = queue.poll();
+                LogUtil.d("service", "[Notify] onServiceConnected: notify list size=" + (bean != null ? bean.size() : "null"));
+                if (bean != null) {
+                    try {
+                        mNotifyAidl.notify(bean);
+                    } catch (RemoteException e) {
+                        e.printStackTrace();
+                    }
                 }
+            }catch (Exception e){
+                e.printStackTrace();
+                LogUtil.d("service", "[Notify] onServiceConnected: e1=" + e);
             }
         }
 
@@ -236,12 +276,16 @@ public class AppBus {
     private IBinder.DeathRecipient mDeathRecipientNotify = new IBinder.DeathRecipient() {
         @Override
         public void binderDied() {
-            LogUtil.d("service","[Notify] binderDied!!!!!: mNotifyAidl="+mNotifyAidl);
-            if (mNotifyAidl == null) {
-                return;
+            try {
+                LogUtil.d("service", "[Notify] binderDied!!!!!: mNotifyAidl=" + mNotifyAidl);
+                if (mNotifyAidl != null) {
+                    mNotifyAidl.asBinder().unlinkToDeath(mDeathRecipientNotify, 0);
+                }
+                unbindNotifyService();
+            }catch (Exception e){
+                e.printStackTrace();
+                LogUtil.d("service", "[Notify] binderDied!!!!!: e=" + e);
             }
-            mNotifyAidl.asBinder().unlinkToDeath(mDeathRecipientNotify, 0);
-            mNotifyAidl = null;
         }
     };
 }

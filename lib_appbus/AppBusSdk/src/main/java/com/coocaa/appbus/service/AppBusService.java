@@ -27,7 +27,6 @@ public abstract class AppBusService extends Service {
         LogUtil.d("service","onCreate"+", Thread="+Thread.currentThread().toString());
     }
 
-
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         LogUtil.d("service","onStartCommand intent"+intent+", flags="+flags+", startId="+startId);
@@ -58,7 +57,7 @@ public abstract class AppBusService extends Service {
             LogUtil.d("service","register callBack: cb="+cb+", client pid="+pid+", Thread="+Thread.currentThread().toString());
             if (cb != null) {
                 AppBus.getInstance().registerListener(cb);
-                cb.asBinder().linkToDeath(mDeathRecipient,0);
+                cb.asBinder().linkToDeath(/*mDeathRecipient*/new DeathRecipientListen(cb),0);
             }
         }
 
@@ -83,10 +82,24 @@ public abstract class AppBusService extends Service {
         }
     }
 
+    class DeathRecipientListen implements IBinder.DeathRecipient{
+        private AppBusCallback cb = null;
+
+        public DeathRecipientListen(AppBusCallback cb){
+            this.cb = cb;
+        }
+
+        @Override
+        public void binderDied() {
+            LogUtil.d("service","callback is binderDied!!!!!");
+            AppBus.getInstance().unregisterListener(cb);
+        }
+    }
+
     private IBinder.DeathRecipient mDeathRecipient = new IBinder.DeathRecipient() {
         @Override
         public void binderDied() {
-            LogUtil.d("service","binderDied!!!!!");
+            LogUtil.d("service","callback is binderDied!!!!!");
         }
     };
 
