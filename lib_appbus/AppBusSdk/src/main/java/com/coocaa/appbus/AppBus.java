@@ -58,16 +58,7 @@ public class AppBus {
     }
 
     public void destroy(){
-        try {
-            LogUtil.d("service","destroy: mNotifyAidl="+mNotifyAidl);
-            if (mNotifyAidl != null) {
-                mContext.unbindService(mNotifyConnection);
-                mNotifyAidl = null;
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-            LogUtil.d("service","destroy: e="+e);
-        }
+        LogUtil.d("service","destroy");
         mContext = null;
     }
 
