@@ -167,13 +167,13 @@ public class AppBus {
                     try {
                         Intent intent = new Intent(ACTION_NOTIFY);
                         Intent choice = AndroidUtil.createExplicitFromImplicitIntent(mContext, intent);
-                        Intent eintent = null;
+                        //Intent eintent = null;
                         if (choice == null) {
                             //这里没有找到对应的service，怎么处理？
                         } else {
-                            eintent = new Intent(choice);
-                            boolean res = mContext.bindService(eintent, mNotifyConnection, Service.BIND_AUTO_CREATE);
-                            LogUtil.d("service","[notify] bindNotifyService: bind service is over eintent="+eintent+", result res="+res);
+                            //eintent = new Intent(choice);
+                            boolean res = mContext.bindService(choice, mNotifyConnection, Service.BIND_AUTO_CREATE);
+                            LogUtil.d("service","[notify] bindNotifyService: bind service is over choice="+choice+", result res="+res);
                         }
                     }catch (Exception e){
                         e.printStackTrace();

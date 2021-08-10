@@ -86,13 +86,13 @@ public class Client {
 
                 Intent intent = new Intent(action);
                 Intent choice = AndroidUtil.createExplicitFromImplicitIntent(context,intent);
-                Intent eintent = null;
+                //Intent eintent = null;
                 if(choice==null){
                     //这里没有找到对应的service，怎么处理？
                 }else{
-                    eintent = new Intent(choice);
-                    boolean res = context.bindService(eintent, mServiceConnection, Service.BIND_AUTO_CREATE);
-                    LogUtil.d("client","bind service: success eintent="+eintent+", result res="+res);
+                    //eintent = new Intent(choice);
+                    boolean res = context.bindService(choice, mServiceConnection, Service.BIND_AUTO_CREATE);
+                    LogUtil.d("client","bind service: success choice="+choice+", result res="+res);
                 }
             }
         });
