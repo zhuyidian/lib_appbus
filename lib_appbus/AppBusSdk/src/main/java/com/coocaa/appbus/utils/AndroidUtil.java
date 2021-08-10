@@ -377,11 +377,13 @@ public class AndroidUtil {
                 ResolveInfo serviceInfo = info;
                 String packageName = serviceInfo.serviceInfo.packageName;
                 String className = serviceInfo.serviceInfo.name;
-                LogUtil.d("check action","createExplicitFromImplicitIntent: !!!go to bind!!! packageName="+packageName+", className="+className);
+                String action = implicitIntent.getAction();
+                LogUtil.d("check action","createExplicitFromImplicitIntent: !!!go to bind!!! packageName="+packageName+", className="+className+", action="+action);
                 ComponentName component = new ComponentName(packageName, className);
 
                 // Set the component to be explicit
                 explicitIntent.setComponent(component);
+                explicitIntent.setAction(action);
                 result = true;
                 break;
             }
