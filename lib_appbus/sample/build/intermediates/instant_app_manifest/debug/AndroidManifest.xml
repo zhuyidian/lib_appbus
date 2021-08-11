@@ -6,7 +6,7 @@
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="19"
+        android:minSdkVersion="17"
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -32,19 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.coocaa.appbus.get"
-            android:value="true" />
-
-        <service
-            android:name="com.coocaa.appbus.service.AppBusService"
-            android:enabled="true"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="com.coocaa.appbus.service.AppBusService" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>

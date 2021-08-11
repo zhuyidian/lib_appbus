@@ -106,11 +106,6 @@ androidx/versionedparcelable/NonParcelField.class
 androidx/versionedparcelable/ParcelField.class
 androidx/versionedparcelable/VersionedParcelize.class
 androidx/viewpager/widget/ViewPager$DecorView.class
-com/google/gson/annotations/Expose.class
-com/google/gson/annotations/JsonAdapter.class
-com/google/gson/annotations/SerializedName.class
-com/google/gson/annotations/Since.class
-com/google/gson/annotations/Until.class
 org/aspectj/internal/lang/annotation/ajcDeclareAnnotation.class
 org/aspectj/internal/lang/annotation/ajcDeclareEoW.class
 org/aspectj/internal/lang/annotation/ajcDeclareParents.class

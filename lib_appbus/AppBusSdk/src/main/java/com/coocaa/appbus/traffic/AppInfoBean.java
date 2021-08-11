@@ -13,11 +13,13 @@ import android.os.Parcelable;
  */
 public class AppInfoBean implements Parcelable {
     private Bitmap mIcon;
+    private String url;
     private String label;
     //private Intent launchIntent;
     //private PackageInfo packageInfo;
     private String mPackage;
     private String mClass;
+
     public static final Creator<AppInfoBean> CREATOR = new Creator<AppInfoBean>() {
         public AppInfoBean createFromParcel(Parcel in) {
             return new AppInfoBean(in);
@@ -39,10 +41,20 @@ public class AppInfoBean implements Parcelable {
         this.mClass = mClass;
     }
 
+    public AppInfoBean(String url,String label,String mPackage, String mClass) {
+        this.url = url;
+//        this.packageInfo = info;
+        this.label = label;
+//        this.launchIntent = intent;
+        this.mPackage = mPackage;
+        this.mClass = mClass;
+    }
+
     private AppInfoBean(Parcel in) {
         if (in.readInt() != 0) {
             this.mIcon = (Bitmap)Bitmap.CREATOR.createFromParcel(in);
         }
+        this.url = in.readString();
         this.label = in.readString();
 //        if (in.readInt() != 0) {
 //            this.packageInfo = (PackageInfo)PackageInfo.CREATOR.createFromParcel(in);
@@ -64,6 +76,7 @@ public class AppInfoBean implements Parcelable {
             dest.writeInt(1);
             this.mIcon.writeToParcel(dest, 0);
         }
+        dest.writeString(this.url);
         dest.writeString(this.label);
 //        if(this.launchIntent == null){
 //            dest.writeInt(0);
@@ -87,6 +100,14 @@ public class AppInfoBean implements Parcelable {
 
     public void setIcon(Bitmap bitmap) {
         this.mIcon = bitmap;
+    }
+
+    public String getUrl() {
+        return this.url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
 //    public PackageInfo getPackageInfo() {

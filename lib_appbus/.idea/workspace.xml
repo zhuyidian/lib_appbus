@@ -32,73 +32,142 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47623b0a-0cb8-413c-aa1c-26f9dbbe389a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/logger/lib_appbus.logger.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjrt_1_8_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_zhuyidian_lib_appbus_AppBusSdk_V1_0_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sample/lib_appbus.sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sample/lib_appbus.sample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/generated/source/buildConfig/debug/com/dunn/logger/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/HttpUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/HttpUtils$ResultCallBack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/HttpUtils$UploadUtilInstance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/HttpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/InitJointPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LogAspect$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LogConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LogJointPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LoggerManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LoggerManager$CheckTimerTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LoggerManager$WriteAble.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LoggerManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/ReleaseJointPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/Tools.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/UploadJointPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/ZipUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/packaged_res/debug/layout/ui_defualt_navigation_bar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/symbols/debug/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/outputs/aar/logger-debug.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/androidTest/java/com/tc/library/ApplicationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/HttpUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/InitJointPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/LogAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/LogConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/LogJointPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/LoggerManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/ReleaseJointPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/Tools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/UploadJointPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/ZipUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/res/layout/ui_defualt_navigation_bar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/res/values/attrs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/test/java/com/tc/library/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/intermediates/library_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/build/outputs/aar/AppBusSdk-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build/outputs/aar/AppBusSdk-debug.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/traffic/AppInfoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/traffic/AppInfoBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/library_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/outputs/aar/AppIssueSDK-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/AppIssueSDK/build/outputs/aar/AppIssueSDK-debug.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/const.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/const.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/coocaa/appinfo/R.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/SW6CndbK2tgotaDCftkqrNSN4PE=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VtGBmgNqFuo5M9nNRxPSX1JMzRY=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mmmD1ojwQu4A3_QiBxNXVl+XNvI=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/SW6CndbK2tgotaDCftkqrNSN4PE=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/VtGBmgNqFuo5M9nNRxPSX1JMzRY=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/mmmD1ojwQu4A3_QiBxNXVl+XNvI=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/1TwOS+WkQTipspgyaSbt4st0m6A=" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/1TwOS+WkQTipspgyaSbt4st0m6A=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/o_cca9TSOdE_envRGMuBwInM_UE=" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/o_cca9TSOdE_envRGMuBwInM_UE=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/instant_app_manifest/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/instant_app_manifest/debug/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/instant_run_merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/instant_run_merged_manifests/debug/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appinfo/R.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/demo/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/demo/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/legacy_multidex_main_dex_list/debug/transformClassesWithMultidexlistForDebug/mainDexList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/legacy_multidex_main_dex_list/debug/transformClassesWithMultidexlistForDebug/mainDexList.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/merged_manifests/debug/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/processed_res/debug/processDebugResources/out/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/processed_res/debug/processDebugResources/out/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/10.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/11.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/12.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/13.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/14.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/14.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/15.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/16.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/16.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/17.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/18.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/18.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/19.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/19.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/20.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/20.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/21.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/22.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/22.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/23.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/23.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/24.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/24.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/25.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/25.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/26.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/26.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/27.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/27.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/28.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/28.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/29.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/29.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/30.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/30.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/31.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/31.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/32.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/32.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/33.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/34.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/7.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/8.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/9.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/ajx/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/10.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/11.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/12.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/13.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/14.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/14.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/15.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/16.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/16.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/17.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/18.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/18.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/19.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/19.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/20.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/20.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/21.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/22.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/22.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/23.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/23.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/24.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/24.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/25.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/25.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/26.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/26.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/27.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/27.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/28.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/28.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/29.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/29.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/30.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/30.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/31.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/31.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/32.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/32.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/33.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/33.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/34.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/34.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/35.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/35.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/36.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/36.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/37.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/37.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/38.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/39.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/7.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/8.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/9.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexMerger/debug/0/classes2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/dexMerger/debug/0/classes2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/outputs/apk/debug/sample-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/outputs/apk/debug/sample-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/dunn/logger/demo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/dunn/logger/demo/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
