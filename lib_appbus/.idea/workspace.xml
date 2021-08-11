@@ -32,26 +32,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47623b0a-0cb8-413c-aa1c-26f9dbbe389a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_alpha3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_alpha3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_alpha3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_alpha3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/AppIssueSDK/lib_appbus.AppIssueSDK.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppIssueSDK/.idea/modules/AppIssueSDK-master-f0693f5ccd7d837c7a9884af59bbc8138ee7264f.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/logger/lib_appbus.logger.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppBusSdk/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/generated/source/buildConfig/debug/com/dunn/logger/BuildConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/HttpUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/HttpUtils$ResultCallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/HttpUtils$UploadUtilInstance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/HttpUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/InitJointPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LogAspect$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LogAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LogConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LogJointPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LoggerManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LoggerManager$CheckTimerTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LoggerManager$WriteAble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/LoggerManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/ReleaseJointPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/Tools.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/UploadJointPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/dunn/logger/ZipUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/packaged_res/debug/layout/ui_defualt_navigation_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/symbols/debug/R.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/outputs/aar/logger-debug.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/androidTest/java/com/tc/library/ApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/HttpUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/InitJointPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/LogAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/LogConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/LogJointPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/LoggerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/ReleaseJointPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/Tools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/UploadJointPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger/ZipUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/res/layout/ui_defualt_navigation_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/test/java/com/tc/library/ExampleUnitTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

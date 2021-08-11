@@ -1,4 +1,4 @@
 include ':AppBusSdk'
-include ':logger',  ':sample'
+include ':sample'
 
 include ':AppIssueSDK'
