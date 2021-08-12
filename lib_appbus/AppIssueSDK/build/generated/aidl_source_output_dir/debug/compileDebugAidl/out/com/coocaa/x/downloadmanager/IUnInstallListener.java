@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\project\\github\\lib_appbus\\lib_appbus\\AppIssueSDK\\src\\main\\aidl\\com\\coocaa\\x\\downloadmanager\\IUnInstallListener.aidl
+ * Original file: /home/dunn/project/github/lib_appbus/lib_appbus/AppIssueSDK/src/main/aidl/com/coocaa/x/downloadmanager/IUnInstallListener.aidl
  */
 package com.coocaa.x.downloadmanager;
 public interface IUnInstallListener extends android.os.IInterface

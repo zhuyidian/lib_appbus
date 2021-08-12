@@ -40,7 +40,7 @@ import java.util.List;
  * Description:Client
  */
 public class Client {
-    public static final String ACTION="com.coocaa.os.controlcenter.APP_INFO_TEST";
+    public static final String ACTION="com.coocaa.os.controlcenter.APP_INFO";
 
     private static Client instance = new Client();
 

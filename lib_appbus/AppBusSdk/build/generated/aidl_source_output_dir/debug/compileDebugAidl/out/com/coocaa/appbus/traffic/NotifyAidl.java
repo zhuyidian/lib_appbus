@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\project\\github\\lib_appbus\\lib_appbus\\AppBusSdk\\src\\main\\aidl\\com\\coocaa\\appbus\\traffic\\NotifyAidl.aidl
+ * Original file: /home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/aidl/com/coocaa/appbus/traffic/NotifyAidl.aidl
  */
 package com.coocaa.appbus.traffic;
 public interface NotifyAidl extends android.os.IInterface

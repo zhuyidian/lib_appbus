@@ -113,8 +113,8 @@ public class AppBus {
     public void registerListener(AppBusCallback cb){
         try {
             if (mRemoteCallbacks != null) {
-                LogUtil.d("service","register listener : mRemoteCallbacks cb="+cb);
                 mRemoteCallbacks.register(cb);
+                LogUtil.d("service","register listener : mRemoteCallbacks cb="+cb+", size="+mRemoteCallbacks.getRegisteredCallbackCount());
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -125,8 +125,8 @@ public class AppBus {
     public void unregisterListener(AppBusCallback cb){
         try {
             if (mRemoteCallbacks != null) {
-                LogUtil.d("service","unregister listener : mRemoteCallbacks cb="+cb);
                 mRemoteCallbacks.unregister(cb);
+                LogUtil.d("service","unregister listener : mRemoteCallbacks cb="+cb+", size="+mRemoteCallbacks.getRegisteredCallbackCount());
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -137,8 +137,8 @@ public class AppBus {
     public void killListener(){
         try {
             if (mRemoteCallbacks != null) {
-                LogUtil.d("service","kill listener : mRemoteCallbacks kill");
                 mRemoteCallbacks.kill();
+                LogUtil.d("service","kill listener : mRemoteCallbacks kill"+", size="+mRemoteCallbacks.getRegisteredCallbackCount());
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -147,7 +147,7 @@ public class AppBus {
     }
 
     public void update(final List<AppInfoBean> appInfoList){
-        LogUtil.d("service","update: appInfoList="+(appInfoList!=null?appInfoList.size():"null"));
+        LogUtil.d("service","[Notify] update: appInfoList="+(appInfoList!=null?appInfoList.size():"null"));
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {
@@ -168,17 +168,17 @@ public class AppBus {
                     for (int i = 0; i < N; i++) {
                         try {
                             mRemoteCallbacks.getBroadcastItem(i).update(appInfoList);
-                            LogUtil.d("service", "update :mRemoteCallbacks update");
+                            LogUtil.d("service", "[Notify] update :mRemoteCallbacks update");
                         } catch (RemoteException e) {
                             // The RemoteCallbackList will take care of removing
                             // the dead object for us.
-                            LogUtil.d("service", "update" + ", e=" + e);
+                            LogUtil.d("service", "[Notify] update" + ", e=" + e);
                         }
                     }
                     mRemoteCallbacks.finishBroadcast();
                 }catch (Exception e){
                     e.printStackTrace();
-                    LogUtil.d("service", "update: e="+e);
+                    LogUtil.d("service", "[Notify] update: e="+e);
                 }
             }
         });
