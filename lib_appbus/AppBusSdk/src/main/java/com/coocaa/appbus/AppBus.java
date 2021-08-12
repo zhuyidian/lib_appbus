@@ -45,20 +45,27 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class AppBus {
     public static final boolean IS_BUNDLE_DEBUG = true;
-    private static AppBus instance = new AppBus();
     private Context mContext;
 
-    public static AppBus getInstance() {
-        return instance;
+    private AppBus(){
+
     }
 
+    public static class AppBusHolder{
+        private static volatile AppBus instance = new AppBus();
+    }
+
+    public static AppBus getInstance() {
+        return AppBusHolder.instance;
+    }
+
+    @Deprecated
     public void init(Context context){
         this.mContext = context.getApplicationContext();
-        LogUtil.d("service","init: mContext="+mContext);
     }
 
+    @Deprecated
     public void destroy(){
-        LogUtil.d("service","destroy");
         mContext = null;
     }
 
@@ -137,17 +144,19 @@ public class AppBus {
     public void killListener(){
         try {
             if (mRemoteCallbacks != null) {
+                //不能kill，否则后面不能使用，除非重新new mRemoteCallbacks
                 //mRemoteCallbacks.kill();
-                LogUtil.d("service","kill listener : mRemoteCallbacks kill"+", size="+mRemoteCallbacks.getRegisteredCallbackCount());
+                //LogUtil.d("service","kill listener : mRemoteCallbacks kill"+", size="+mRemoteCallbacks.getRegisteredCallbackCount());
             }
         }catch (Exception e){
             e.printStackTrace();
-            LogUtil.d("service","kill listener e="+e);
+            //LogUtil.d("service","kill listener e="+e);
         }
     }
 
     public void update(final List<AppInfoBean> appInfoList){
         LogUtil.d("service","[Notify] update: appInfoList="+(appInfoList!=null?appInfoList.size():"null"));
+        //这里会线程阻塞等待（等待binder唤醒），不要放在UI线程
         ThreadManager.getInstance().ioThread(new Runnable() {
             @Override
             public void run() {

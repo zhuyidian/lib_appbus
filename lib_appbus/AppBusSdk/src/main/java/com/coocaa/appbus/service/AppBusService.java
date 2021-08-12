@@ -24,7 +24,7 @@ public abstract class AppBusService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        LogUtil.d("service","onCreate"+", Thread="+Thread.currentThread().toString());
+        LogUtil.d("service","onCreate");
     }
 
     @Override
@@ -35,14 +35,13 @@ public abstract class AppBusService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        LogUtil.d("service","onBind intent="+intent+", Thread="+Thread.currentThread().toString());
+        LogUtil.d("service","onBind intent="+intent);
         return new AppBusAidlImpl();
     }
 
     @Override
     public void onDestroy() {
         LogUtil.d("service","onDestroy");
-        AppBus.getInstance().killListener();
         super.onDestroy();
     }
 

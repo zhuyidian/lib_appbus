@@ -42,17 +42,22 @@ import java.util.List;
 public class Client {
     public static final String ACTION="com.coocaa.os.controlcenter.APP_INFO";
 
-    private static Client instance = new Client();
+    private Client(){
+
+    }
+
+    public static class ClientHolder{
+        private static volatile Client instance = new Client();
+    }
 
     public static Client getInstance() {
-        return instance;
+        return ClientHolder.instance;
     }
 
     //-------------------------------client--------------------------------------------------------
     private Context mContext;
     private AppBusAidl mXBusAidl;
     private INotify notify;
-    private HandlerThread handlerThread;
 
     public void init(Context context, INotify notify) {
         this.mContext = context;
@@ -89,8 +94,7 @@ public class Client {
             @Override
             public void run() {
                 try {
-                    LogUtil.d("client", "bind service: packageName=" + packageName + ", action=" + action +
-                            ", Thread=" + Thread.currentThread().toString());
+                    LogUtil.d("client", "bind service: packageName=" + packageName + ", action=" + action);
 
                     Intent intent = new Intent(action);
                     final Intent choice = AndroidUtil.createExplicitFromImplicitIntent(context, intent);
@@ -98,7 +102,6 @@ public class Client {
                     if (choice == null) {
                         //这里没有找到对应的service，怎么处理？
                     } else {
-                        //eintent = new Intent(choice);
                         //启动延时检查机制
                         ThreadManager.getInstance().ioThread(new Runnable() {
                             @Override
@@ -177,17 +180,14 @@ public class Client {
             try {
                 LogUtil.d("client", "binderDied!!!!!mXBusAidl=" + mXBusAidl);
                 if (mXBusAidl != null) mXBusAidl.asBinder().unlinkToDeath(mDeathRecipient, 0);
-                //mXBusAidl = null;
                 if (notify != null) {
                     notify.serverKill();
                 }
-                //notify=null;
                 //这里再次解除绑定
                 if (mContext != null) {
                     unbind(mContext);
                 }
-                //是否需要重新绑定服务
-                //bind();
+                //是否需要重新绑定服务?
             }catch (Exception e){
                 e.printStackTrace();
                 LogUtil.d("client", "binderDied!!!!!e=" + e);
@@ -203,7 +203,7 @@ public class Client {
                 if (mXBusAidl != null && notify != null) {
                     notify.connectStatus(true);
                 }
-                LogUtil.d("client", "onServiceConnected: mXBusAidl=" + mXBusAidl + ", Thread=" + Thread.currentThread().toString());
+                LogUtil.d("client", "onServiceConnected: mXBusAidl=" + mXBusAidl);
                 service.linkToDeath(mDeathRecipient, 0);
             }catch (Exception e){
                 e.printStackTrace();
@@ -214,8 +214,7 @@ public class Client {
                 @Override
                 public void run() {
                     try {
-                        LogUtil.d("client","onServiceConnected register callback: client PID="+ Process.myPid()+
-                                ", Thread="+Thread.currentThread().toString());
+                        LogUtil.d("client","onServiceConnected register callback: client PID="+ Process.myPid());
                         mXBusAidl.register(mCallback, Process.myPid());
                     } catch (RemoteException e) {
                         e.printStackTrace();
@@ -232,7 +231,6 @@ public class Client {
                 notify.connectStatus(false);
             }
             //交给mDeathRecipient去释放
-            //mXBusAidl = null;
         }
     };
 
@@ -379,11 +377,7 @@ public class Client {
             }
 //            ApplicationInfo appInfo = pm.getApplicationInfo(getPackageName(), PackageManager.GET_META_DATA);
 //            String value = appInfo.metaData.getString("api_key");
-        }
-//        catch (PackageManager.NameNotFoundException e) {
-//            e.printStackTrace();
-//        }
-        catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
         }
 
@@ -391,7 +385,10 @@ public class Client {
     }
 
     public List<AppInfoBean> getAppInfo() throws RemoteException {
-        if(mXBusAidl==null){
+        if(mXBusAidl == null || mXBusAidl.asBinder().isBinderAlive()==false){
+            if (notify != null) {
+                notify.serverKill();
+            }
             return null;
         }
         return mXBusAidl.getAppInfo();
