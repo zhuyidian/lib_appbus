@@ -137,7 +137,7 @@ public class AppBus {
     public void killListener(){
         try {
             if (mRemoteCallbacks != null) {
-                mRemoteCallbacks.kill();
+                //mRemoteCallbacks.kill();
                 LogUtil.d("service","kill listener : mRemoteCallbacks kill"+", size="+mRemoteCallbacks.getRegisteredCallbackCount());
             }
         }catch (Exception e){
