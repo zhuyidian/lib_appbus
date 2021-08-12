@@ -112,7 +112,10 @@ public class AppBus {
 
     public void registerListener(AppBusCallback cb){
         try {
-            if (mRemoteCallbacks != null) mRemoteCallbacks.register(cb);
+            if (mRemoteCallbacks != null) {
+                LogUtil.d("service","register listener : mRemoteCallbacks cb="+cb);
+                mRemoteCallbacks.register(cb);
+            }
         }catch (Exception e){
             e.printStackTrace();
             LogUtil.d("service","register listener e="+e);
@@ -121,7 +124,10 @@ public class AppBus {
 
     public void unregisterListener(AppBusCallback cb){
         try {
-            if (mRemoteCallbacks != null) mRemoteCallbacks.unregister(cb);
+            if (mRemoteCallbacks != null) {
+                LogUtil.d("service","unregister listener : mRemoteCallbacks cb="+cb);
+                mRemoteCallbacks.unregister(cb);
+            }
         }catch (Exception e){
             e.printStackTrace();
             LogUtil.d("service","unregister listener e="+e);
@@ -130,7 +136,10 @@ public class AppBus {
 
     public void killListener(){
         try {
-            if (mRemoteCallbacks != null) mRemoteCallbacks.kill();
+            if (mRemoteCallbacks != null) {
+                LogUtil.d("service","kill listener : mRemoteCallbacks kill");
+                mRemoteCallbacks.kill();
+            }
         }catch (Exception e){
             e.printStackTrace();
             LogUtil.d("service","kill listener e="+e);
@@ -159,6 +168,7 @@ public class AppBus {
                     for (int i = 0; i < N; i++) {
                         try {
                             mRemoteCallbacks.getBroadcastItem(i).update(appInfoList);
+                            LogUtil.d("service", "update :mRemoteCallbacks update");
                         } catch (RemoteException e) {
                             // The RemoteCallbackList will take care of removing
                             // the dead object for us.
