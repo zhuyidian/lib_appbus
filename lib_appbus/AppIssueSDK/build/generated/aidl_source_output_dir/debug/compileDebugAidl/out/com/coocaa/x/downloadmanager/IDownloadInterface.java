@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/dunn/project/github/lib_appbus/lib_appbus/AppIssueSDK/src/main/aidl/com/coocaa/x/downloadmanager/IDownloadInterface.aidl
+ * Original file: D:\\project\\github\\lib_appbus\\lib_appbus\\AppIssueSDK\\src\\main\\aidl\\com\\coocaa\\x\\downloadmanager\\IDownloadInterface.aidl
  */
 package com.coocaa.x.downloadmanager;
 public interface IDownloadInterface extends android.os.IInterface
