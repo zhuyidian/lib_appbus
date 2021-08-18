@@ -32,15 +32,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47623b0a-0cb8-413c-aa1c-26f9dbbe389a" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/utils/AndroidUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/utils/AndroidUtil.java" afterDir="false" />
+>>>>>>> b56e8db38517d9ef7a320af5ee2e3d6e0b8da5ba
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@172.20.147.6:5555]" />
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Administrator\.android\avd\Pixel_3a_API_30_x86.avd]" />
+>>>>>>> b56e8db38517d9ef7a320af5ee2e3d6e0b8da5ba
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -99,17 +107,25 @@
     <property name="android.sdk.path" value="$USER_HOME$/software/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="device.picker.selection" value="b2e7acc7" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AppBusSdk" />
+>>>>>>> b56e8db38517d9ef7a320af5ee2e3d6e0b8da5ba
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/library_animation/src/main/res/drawable-xxxhdpi" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.dunn.net" />
       <recent name="com.dunn.sample" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\github\lib_appbus\lib_appbus\AppBusSdk" />
+      <recent name="D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\aidl\com\coocaa\appbus\traffic" />
+      <recent name="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger" />
+      <recent name="$PROJECT_DIR$/sample/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/tools/src/main/res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.coocaa.appbus.service" />
@@ -118,12 +134,8 @@
       <recent name="com.dunn.tools.navigationbar" />
       <recent name="com.dunn.net.listener" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\aidl\com\coocaa\appbus\traffic" />
-      <recent name="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger" />
-      <recent name="$PROJECT_DIR$/sample/src/main/res/layout" />
-      <recent name="$PROJECT_DIR$/tools/src/main/res" />
-      <recent name="$PROJECT_DIR$/sample/src/main/java/com/sample/tools" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library_animation/src/main/res/drawable-xxxhdpi" />
     </key>
   </component>
   <component name="RunManager">
@@ -193,7 +205,11 @@
       </method>
     </configuration>
   </component>
+<<<<<<< HEAD
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+=======
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+>>>>>>> b56e8db38517d9ef7a320af5ee2e3d6e0b8da5ba
   <component name="SvnConfiguration">
     <configuration />
   </component>

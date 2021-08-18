@@ -32,7 +32,7 @@ public class AppBusAidlImpl extends AppBusAidl.Stub {
     private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
             = new RemoteCallbackList<AppBusCallback>();
 
-    private IBinder.DeathRecipient mDeathRecipient = new IBinder.DeathRecipient() {
+    private DeathRecipient mDeathRecipient = new DeathRecipient() {
         @Override
         public void binderDied() {
             LogUtil.d("service","binderDied!!!!!");
