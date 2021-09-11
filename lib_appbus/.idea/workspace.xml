@@ -32,7 +32,122 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47623b0a-0cb8-413c-aa1c-26f9dbbe389a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_alpha1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_alpha3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_alpha3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_alpha3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_alpha3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjrt_1_8_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjrt_1_8_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/AppIssueSDK/lib_appbus.AppIssueSDK.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/AppBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/AppBus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/core/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.gradle/6.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.gradle/6.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.idea/modules/AppIssueSDK-master-f0693f5ccd7d837c7a9884af59bbc8138ee7264f.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/coocaa/x/downloadmanager/IDownloadInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/coocaa/x/downloadmanager/IDownloadListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/coocaa/x/downloadmanager/IInstallListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/com/coocaa/x/downloadmanager/IUnInstallListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/generated/source/buildConfig/debug/com/coocaa/appissuesdk/BuildConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/aidl_parcelable/debug/compileDebugAidl/out/com/coocaa/x/downloadmanager/DownloadInfo.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/IAppListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/IAppManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/data/LaunchData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/impl/AppManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/impl/AppManager$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/impl/AppManager$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/impl/AppManager$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/impl/AppManager$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/impl/AppManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/utils/Android.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/utils/AppChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/utils/ThreadManager$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/utils/ThreadManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/utils/ThreadManager$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/appissuesdk/utils/ThreadManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/DownloadInfo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/DownloadInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IDownloadInterface$Stub$Proxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IDownloadInterface$Stub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IDownloadInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IDownloadListener$Stub$Proxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IDownloadListener$Stub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IDownloadListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IInstallListener$Stub$Proxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IInstallListener$Stub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IInstallListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IUnInstallListener$Stub$Proxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IUnInstallListener$Stub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/coocaa/x/downloadmanager/IUnInstallListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/symbols/debug/R.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/outputs/aar/AppIssueSDK-debug.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/androidTest/java/com/coocaa/appissuesdk/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/aidl/com/coocaa/x/downloadmanager/DownloadInfo.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/aidl/com/coocaa/x/downloadmanager/IDownloadInterface.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/aidl/com/coocaa/x/downloadmanager/IDownloadListener.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/aidl/com/coocaa/x/downloadmanager/IInstallListener.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/aidl/com/coocaa/x/downloadmanager/IUnInstallListener.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/java/com/coocaa/appissuesdk/IAppListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/java/com/coocaa/appissuesdk/IAppManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/java/com/coocaa/appissuesdk/data/LaunchData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/java/com/coocaa/appissuesdk/impl/AppManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/java/com/coocaa/appissuesdk/utils/Android.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/java/com/coocaa/appissuesdk/utils/AppChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/java/com/coocaa/appissuesdk/utils/ThreadManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/main/java/com/coocaa/x/downloadmanager/DownloadInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppIssueSDK/src/test/java/com/coocaa/appissuesdk/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,36 +208,39 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="true" />
+    <property name="android-custom-view/home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/java/com/coocaa/appbus/able/BusButton.java_SELECTED" value="BusButton" />
     <property name="android-custom-viewD:/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/java/com/coocaa/appbus/able/BusButton.java_SELECTED" value="BusButton" />
     <property name="android-custom-viewD:/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/java/com/coocaa/appbus/able/TestView.java_SELECTED" value="TestView" />
     <property name="android.sdk.path" value="$USER_HOME$/software/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="device.picker.selection" value="b2e7acc7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../gitLab/coocaa-center/hello/AppIssueSDK" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able" />
+    <property name="multi-representation-preview/home/dunn/project/github/lib_appbus/lib_appbus/AppBusSdk/src/main/java/com/coocaa/appbus/able/BusButton.java_selected" value="Custom views" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/library_animation/src/main/res/drawable-xxxhdpi" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.coocaa.appbus" />
       <recent name="com.dunn.net" />
       <recent name="com.dunn.sample" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.coocaa.appbus.service" />
-      <recent name="com.dunn.logger" />
-      <recent name="com.sample.tools" />
-      <recent name="com.dunn.tools.navigationbar" />
-      <recent name="com.dunn.net.listener" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AppBusSdk/src/main/java/com/coocaa/appbus/able" />
       <recent name="D:\project\github\lib_appbus\lib_appbus\AppBusSdk\src\main\aidl\com\coocaa\appbus\traffic" />
       <recent name="$PROJECT_DIR$/logger/src/main/java/com/dunn/logger" />
       <recent name="$PROJECT_DIR$/sample/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/tools/src/main/res" />
-      <recent name="$PROJECT_DIR$/sample/src/main/java/com/sample/tools" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.coocaa.appbus.able" />
+      <recent name="com.coocaa.appbus.service" />
+      <recent name="com.dunn.logger" />
+      <recent name="com.sample.tools" />
+      <recent name="com.dunn.tools.navigationbar" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library_animation/src/main/res/drawable-xxxhdpi" />
     </key>
   </component>
   <component name="RunManager">
@@ -223,11 +341,15 @@
     </state>
     <state x="614" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1628585900009" />
     <state x="797" y="246" key="#com.intellij.ide.util.MemberChooser/49.24.1871.1056@49.24.1871.1056" timestamp="1627930667890" />
-    <state x="566" y="201" key="FileChooserDialogImpl" timestamp="1628663766385">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="703" y="407" width="563" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1631372110675">
+      <screen x="49" y="24" width="1871" height="1056" />
+    </state>
+    <state x="703" y="407" width="563" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/49.24.1871.1056@49.24.1871.1056" timestamp="1631372110675" />
+    <state x="739" y="282" key="FileChooserDialogImpl" timestamp="1631371298374">
+      <screen x="49" y="24" width="1871" height="1056" />
     </state>
     <state x="566" y="201" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1628663766385" />
-    <state x="739" y="282" key="FileChooserDialogImpl/49.24.1871.1056@49.24.1871.1056" timestamp="1627929342769" />
+    <state x="739" y="282" key="FileChooserDialogImpl/49.24.1871.1056@49.24.1871.1056" timestamp="1631371298374" />
     <state width="1825" height="215" key="GridCell.Tab.0.bottom" timestamp="1628782366266">
       <screen x="49" y="24" width="1871" height="1056" />
     </state>
@@ -252,11 +374,11 @@
       <screen x="49" y="24" width="1871" height="1056" />
     </state>
     <state x="149" y="96" width="1671" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog/49.24.1871.1056@49.24.1871.1056" timestamp="1627919451297" />
-    <state x="513" y="197" width="570" height="536" key="find.popup" timestamp="1628580970282">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="674" y="277" width="621" height="522" key="find.popup" timestamp="1631372475543">
+      <screen x="49" y="24" width="1871" height="1056" />
     </state>
     <state x="513" y="197" width="570" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1628580970282" />
-    <state x="674" y="277" width="621" height="522" key="find.popup/49.24.1871.1056@49.24.1871.1056" timestamp="1627920435661" />
+    <state x="674" y="277" width="621" height="522" key="find.popup/49.24.1871.1056@49.24.1871.1056" timestamp="1631372475543" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">

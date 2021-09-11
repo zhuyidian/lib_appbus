@@ -5,35 +5,19 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.os.Bundle;
 import android.os.IBinder;
-import android.os.Process;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
-import android.text.TextUtils;
 
-import com.coocaa.appbus.able.INotify;
 import com.coocaa.appbus.able.IUserData;
-import com.coocaa.appbus.core.Client;
 import com.coocaa.appbus.joor.Reflect;
-import com.coocaa.appbus.service.AppBusService;
 import com.coocaa.appbus.thread.ThreadManager;
-import com.coocaa.appbus.traffic.AppBusAidl;
 import com.coocaa.appbus.traffic.AppBusCallback;
 import com.coocaa.appbus.traffic.AppInfoBean;
 import com.coocaa.appbus.traffic.NotifyAidl;
-import com.coocaa.appbus.traffic.Request;
-import com.coocaa.appbus.traffic.Response;
 import com.coocaa.appbus.utils.AndroidUtil;
 import com.coocaa.appbus.utils.LogUtil;
-import com.google.gson.Gson;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -75,6 +59,9 @@ public class AppBus {
     private final RemoteCallbackList<AppBusCallback> mRemoteCallbacks
             = new RemoteCallbackList<AppBusCallback>();
 
+    /**
+     * 举例：服务端需要开始的时候注册  AppBus.getInstance().register(ITestData.class, TestData.class);
+     */
     /**
      * 注册需要被调用的class.
      *
